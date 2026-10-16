@@ -1,163 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTROFRAY | Ezrok Studios</title>
-    <style>
-        :root {
-            --bg-dark: #06070b;
-            --panel-bg: rgba(14, 18, 28, 0.85);
-            --neon-cyan: #00f0ff;
-            --neon-orange: #ff6a00;
-            --crimson: #e6194b;
-            --text-main: #eef2f7;
-            --text-muted: #8b9bb4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_title">Astrofray | Neon Space Arena Roguelite by Ezrok Studios</title>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <!-- SEO Core Meta Tags -->
+  <meta name="description" content="Survive bullet-hell curtains behind fracturing physics asteroids. Astrofray is a fast-paced 2D neon-industrial space roguelite auto-shooter by Ezrok Studios. Dodge, merge weapons, and defeat multi-phase dreadnoughts.">
+  <meta name="keywords" content="Astrofray, Ezrok Studios, space roguelite, arena shooter, bullet hell, physics asteroids, weapon merging, auto-shooter, indie game, PC game, Closed Preview 2">
+  <meta name="author" content="Ezrok Studios">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ezrokstudios.github.io/astrofray/">
+  <meta name="theme-color" content="#06070b">
+  <meta name="color-scheme" content="dark">
 
-        body {
-            background-color: var(--bg-dark);
-            background-image: 
-                radial-gradient(circle at 50% 35%, rgba(0, 240, 255, 0.10) 0%, transparent 55%),
-                radial-gradient(circle at 80% 80%, rgba(255, 106, 0, 0.08) 0%, transparent 45%);
-            color: var(--text-main);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            text-align: center;
-        }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 
-        .card {
-            background: var(--panel-bg);
-            border: 1px solid rgba(0, 240, 255, 0.3);
-            box-shadow: 0 0 35px rgba(0, 240, 255, 0.08), inset 0 0 20px rgba(0, 240, 255, 0.04);
-            border-radius: 12px;
-            max-width: 680px;
-            width: 100%;
-            padding: 48px 32px;
-            backdrop-filter: blur(8px);
-        }
+  <!-- OpenGraph / Social Sharing (Discord, Reddit, Facebook) -->
+  <meta property="og:site_name" content="Astrofray">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ezrokstudios.github.io/astrofray/">
+  <meta property="og:title" content="Astrofray | Neon Space Arena Roguelite by Ezrok Studios">
+  <meta property="og:description" content="Survive bullet-hell curtains behind fracturing physics asteroids. Astrofray is a fast-paced 2D neon-industrial space roguelite auto-shooter. Dodge, merge weapons, and defeat multi-phase dreadnoughts.">
+  <meta property="og:image" content="https://ezrokstudios.github.io/astrofray/assets/game-logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Astrofray Game Logo & Key Art">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
 
-        .studio-tag {
-            color: var(--neon-orange);
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ezrokstudios.github.io/astrofray/">
+  <meta name="twitter:title" content="Astrofray | Neon Space Arena Roguelite by Ezrok Studios">
+  <meta name="twitter:description" content="Survive bullet-hell curtains behind fracturing physics asteroids. A fast-paced 2D space arena roguelite auto-shooter by Ezrok Studios.">
+  <meta name="twitter:image" content="https://ezrokstudios.github.io/astrofray/assets/game-logo.png">
+  <meta name="twitter:image:alt" content="Astrofray Logo">
 
-        h1 {
-            font-size: clamp(2.5rem, 7vw, 4.2rem);
-            font-weight: 900;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #ffffff;
-            text-shadow: 0 0 18px rgba(0, 240, 255, 0.65);
-            margin-bottom: 16px;
+  <!-- Structured Data / JSON-LD (Schema.org VideoGame & Organization for Search Engines & LLMs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ezrokstudios.github.io/astrofray/#website",
+        "url": "https://ezrokstudios.github.io/astrofray/",
+        "name": "Astrofray",
+        "description": "Official landing page, press kit, and community portal for Astrofray by Ezrok Studios.",
+        "publisher": {
+          "@id": "https://ezrokstudios.github.io/astrofray/#organization"
+        },
+        "inLanguage": ["en", "de"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://ezrokstudios.github.io/astrofray/#organization",
+        "name": "Ezrok Studios",
+        "url": "https://ezrokstudios.github.io/astrofray/",
+        "logo": "https://ezrokstudios.github.io/astrofray/assets/game-icon.png",
+        "founder": {
+          "@type": "Person",
+          "name": "Ronald Korze"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Traun",
+          "postalCode": "4050",
+          "addressCountry": "AT"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "ezrokstudios@proton.me",
+          "contactType": "developer support"
+        },
+        "sameAs": [
+          "https://github.com/ezrokstudios/astrofray",
+          "https://ezrokstudios.itch.io/astrofray-alpha"
+        ]
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://ezrokstudios.github.io/astrofray/#game",
+        "name": "Astrofray",
+        "alternateName": "Astrofray: Space Roguelite",
+        "url": "https://ezrokstudios.github.io/astrofray/",
+        "image": "https://ezrokstudios.github.io/astrofray/assets/game-logo.png",
+        "description": "Astrofray is a fast-paced 2D neon-industrial space arena roguelite auto-shooter. Pilots survive 10 escalating campaign waves by dodging bullet-hell curtains behind fracturing physics asteroids, executing tactical thruster dashes with 0.25s i-frames, harvesting glowing scrap against a 33% wave-end vacuum tax, and merging weapons from MK1 to MK3 tiers across Machine Gun, Ion Blaster, and Plasma Cannon families.",
+        "genre": [
+          "Action",
+          "Roguelite",
+          "Arena Shooter",
+          "Space Shooter",
+          "Sci-Fi"
+        ],
+        "gamePlatform": [
+          "PC game",
+          "Windows",
+          "Linux (via Proton)",
+          "Steam Deck (via Proton)"
+        ],
+        "operatingSystem": [
+          "Windows",
+          "Linux via Proton"
+        ],
+        "applicationCategory": "Game",
+        "inLanguage": ["en", "de"],
+        "playMode": "SinglePlayer",
+        "author": {
+          "@id": "https://ezrokstudios.github.io/astrofray/#organization"
+        },
+        "publisher": {
+          "@id": "https://ezrokstudios.github.io/astrofray/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/PreOrder",
+          "category": "Closed Preview"
         }
+      }
+    ]
+  }
+  </script>
 
-        .tagline {
-            font-size: 1.15rem;
-            color: var(--neon-cyan);
-            letter-spacing: 0.06em;
-            font-weight: 600;
-            margin-bottom: 28px;
-        }
-
-        .status-badge {
-            display: inline-block;
-            background: rgba(255, 106, 0, 0.12);
-            border: 1px solid var(--neon-orange);
-            color: var(--neon-orange);
-            padding: 8px 18px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 24px;
-            box-shadow: 0 0 15px rgba(255, 106, 0, 0.2);
-        }
-
-        p.description {
-            color: var(--text-muted);
-            line-height: 1.65;
-            font-size: 1rem;
-            max-width: 540px;
-            margin: 0 auto 32px auto;
-        }
-
-        .cta-group {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            text-decoration: none;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            padding: 14px 26px;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-        }
-
-        .btn-primary {
-            background: var(--neon-cyan);
-            color: #05070a;
-            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 28px rgba(0, 240, 255, 0.75);
-        }
-
-        footer {
-            margin-top: 32px;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            opacity: 0.7;
-        }
-    </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <main class="card">
-        <div class="studio-tag">Ezrok Studios</div>
-        <h1>Astrofray</h1>
-        <div class="tagline">Survive the Swarm. Use the Debris. Merge Your Arsenal.</div>
+  <!-- Ambient Space Background & High-Tech Grid -->
+  <div class="space-background"></div>
+  <div class="grid-overlay"></div>
 
-        <div class="status-badge">🚧 Website Under Construction — Preview 2 Incoming</div>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="assets/game-icon.png" alt="Astrofray Game Icon">
+        <div class="brand-text">
+          <span class="brand-title">Astrofray</span>
+          <span class="brand-sub">Ezrok Studios</span>
+        </div>
+      </a>
 
-        <p class="description">
-            A fast-paced neon-industrial 2D space arena roguelite. Weave through bullet-hell curtains behind fracturing physics asteroids, dismantle multi-phase dreadnought bosses turret by turret, and upgrade your ship up to MK3.
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#features" data-i18n="nav_features">Features</a></li>
+          <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
+          <li><a href="#presskit" data-i18n="nav_presskit">Press Kit</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Language Switcher -->
+        <div class="lang-toggle" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+
+        <button type="button" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.8rem;" data-modal="preview" data-i18n="nav_cta">Join Preview</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Semantic Main Landmark for Search & Accessibility -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="preview">
+      <div class="container">
+        
+        <div class="hero-logo-wrapper">
+          <img src="assets/game-logo.png" alt="Astrofray Game Logo" class="hero-logo">
+        </div>
+
+        <br>
+
+        <div class="hero-status-pill">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_status">Closed Preview 2 Deployment Inbound</span>
+        </div>
+
+        <h1 class="hero-slogan" data-i18n="hero_slogan">
+          <span class="visually-hidden">Astrofray — </span>Survive the Swarm.<br><span class="neon-text-cyan">Use the Debris.</span><br>Merge Your Arsenal.
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          A fast-paced neon-industrial 2D space arena roguelite auto-shooter. Weave through bullet-hell curtains behind fracturing physics asteroids, execute split-second thruster dashes, and dismantle multi-phase dreadnought bosses.
         </p>
 
-        <div class="cta-group">
-            <!-- Ersetze das # später einfach durch deinen itch.io-Link -->
-            <a href="#" class="btn btn-primary">Closed Preview on itch.io (Soon)</a>
+        <!-- Hero Call To Actions (All Playtest / itch.io links open Coming Soon) -->
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary" data-modal="preview" data-i18n="hero_cta_discord">
+            Get Preview Password (Discord)
+          </button>
+          <button type="button" class="btn btn-secondary" data-modal="preview" data-i18n="hero_cta_itch">
+            Closed Preview on itch.io (Soon)
+          </button>
+          <a href="https://github.com/ezrokstudios/astrofray" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="hero_cta_github">
+            View on GitHub
+          </a>
         </div>
-    </main>
 
-    <footer>
-        &copy; 2026 Ezrok Studios. All rights reserved.
-    </footer>
+      </div>
+    </section>
 
+    <!-- Core USPs Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag" data-i18n="usp_tag">Tactical Combat Depth</div>
+          <h2 class="section-title" data-i18n="usp_title">High-Speed Evasion & Survival Mechanics</h2>
+          <p class="section-desc" data-i18n="usp_desc">
+            Engineered around aggressive positioning, deterministic physics, and high-risk salvage economics.
+          </p>
+        </div>
+
+        <!-- 4 Core USPs Grid -->
+        <div class="features-grid">
+          
+          <!-- USP 1: Asteroids as Cover -->
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon-badge">☄</div>
+              <h3 class="feature-title" data-i18n="feature_asteroid_title">Physics Asteroids as Cover</h3>
+            </div>
+            <p class="feature-text" data-i18n="feature_asteroid_text">
+              Drifting asteroid clusters feature authentic 2D rigid-body kinematics. Maneuver behind dense rocks to absorb relentless bullet-hell salvos. Under heavy ballistic pressure, large asteroids fracture into smaller shards—or get punched straight through by penetrating plasma rounds.
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip" data-i18n="feature_asteroid_spec1">Kinetic Deflection</span>
+              <span class="spec-chip" data-i18n="feature_asteroid_spec2">Dynamic Fracture</span>
+              <span class="spec-chip" data-i18n="feature_asteroid_spec3">Plasma Piercing</span>
+            </div>
+          </article>
+
+          <!-- USP 2: Dreadnought Bosses -->
+          <article class="feature-card crimson">
+            <div class="feature-header">
+              <div class="feature-icon-badge">☠</div>
+              <h3 class="feature-title" data-i18n="feature_boss_title">Multi-Phase Dreadnought Bosses</h3>
+            </div>
+            <p class="feature-text" data-i18n="feature_boss_text">
+              Face gargantuan command vessels and alien horrors like the Brood Queen across the 10 campaign waves. Bosses cannot simply be burned down: systematically eliminate perimeter point-defense turrets and shield generators before breaching the exposed reactor core.
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip" data-i18n="feature_boss_spec1">Hierarchical Hitboxes</span>
+              <span class="spec-chip" data-i18n="feature_boss_spec2">Turret Destruction</span>
+              <span class="spec-chip" data-i18n="feature_boss_spec3">Core Overload</span>
+            </div>
+          </article>
+
+          <!-- USP 3: 33% Scrap Tax -->
+          <article class="feature-card orange">
+            <div class="feature-header">
+              <div class="feature-icon-badge">⚙</div>
+              <h3 class="feature-title" data-i18n="feature_scrap_title">The 33% Scrap Tax (Greed vs. Safety)</h3>
+            </div>
+            <p class="feature-text" data-i18n="feature_scrap_text">
+              Defeated enemies detonate into glowing Scrap in the middle of active crossfire. Collect drops actively during combat for 100% value, or play safely and wait for the wave-end auto-vacuum—which deducts a 33% recovery tax (granting only 2/3 value).
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip" data-i18n="feature_scrap_spec1">Realtime Salvage (100%)</span>
+              <span class="spec-chip" data-i18n="feature_scrap_spec2">Greed Incentives</span>
+              <span class="spec-chip" data-i18n="feature_scrap_spec3">Auto-Vacuum (2/3 Value)</span>
+            </div>
+          </article>
+
+          <!-- USP 4: Modular Arsenal & Merging -->
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon-badge">⚡</div>
+              <h3 class="feature-title" data-i18n="feature_arsenal_title">Modular Arsenal & Weapon Merging</h3>
+            </div>
+            <p class="feature-text" data-i18n="feature_arsenal_text">
+              Automated weaponry fires continuously based on predictive targeting. Purchase and merge duplicate weapons in the Upgrade Shop (MK1 → MK2 → MK3) across three distinct weapon families: rapid-fire Machine Guns, chain-disrupting Ion Blasters, and armor-penetrating Plasma Cannons. Lock favorite shop cards to save them across rerolls.
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip" data-i18n="feature_arsenal_spec1">Predictive Autofire</span>
+              <span class="spec-chip" data-i18n="feature_arsenal_spec2">MK1 → MK3 Fusion</span>
+              <span class="spec-chip" data-i18n="feature_arsenal_spec3">Shop Card Locking</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Ships Showcase -->
+        <div class="ships-showcase" id="ships">
+          <div class="section-header" style="margin-bottom: 24px;">
+            <div class="section-tag" data-i18n="ships_tag">Hull Doctrine</div>
+            <h2 class="section-title" data-i18n="ships_title">Operational Ship Classes</h2>
+            <p class="section-desc" data-i18n="ships_desc">
+              Choose a chassis suited to your survival doctrine—from ultra-maneuverable hit-and-run interceptors to heavily armored weapon platforms.
+            </p>
+          </div>
+
+          <div class="ships-grid">
+            
+            <!-- Ship 1: Interceptor -->
+            <article class="ship-card">
+              <div class="ship-visual-wrap">
+                <img src="assets/ships/interceptor.png" alt="Astrofray Interceptor Ship Sprite">
+              </div>
+              <h3 class="ship-name" data-i18n="ship1_name">Interceptor</h3>
+              <div class="ship-archetype" data-i18n="ship1_archetype">Ultra-Agile Skirmisher</div>
+              <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship1_desc">
+                Relies on lightning-fast acceleration and 3 rapid thruster dashes with 0.25s invulnerability frames (i-frames) to thread the needle through dense bullet curtains.
+              </p>
+            </article>
+
+            <!-- Ship 2: Scout Fighter -->
+            <article class="ship-card">
+              <div class="ship-visual-wrap">
+                <img src="assets/ships/scoutfighter.png" alt="Astrofray Scout Fighter Ship Sprite">
+              </div>
+              <h3 class="ship-name" data-i18n="ship2_name">Scout Fighter</h3>
+              <div class="ship-archetype" data-i18n="ship2_archetype">Balanced Fleet Scout</div>
+              <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship2_desc">
+                Versatile operational profile with balanced thrusters and hardpoints, accommodating flexible combinations of ballistic and energy weaponry with 2 dash charges.
+              </p>
+            </article>
+
+            <!-- Ship 3: Heavy Fighter -->
+            <article class="ship-card">
+              <div class="ship-visual-wrap">
+                <img src="assets/ships/heavyfighter.png" alt="Astrofray Heavy Fighter Ship Sprite">
+              </div>
+              <h3 class="ship-name" data-i18n="ship3_name">Heavy Fighter</h3>
+              <div class="ship-archetype" data-i18n="ship3_archetype">Armored Dreadnought</div>
+              <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship3_desc">
+                A 5-mount heavy gunship featuring fortified hull plating with built-in damage reduction and an emergency dash, built to anchor the line against overwhelming swarms.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Press Kit Section -->
+    <section class="presskit-section" id="presskit">
+      <div class="container">
+        
+        <div class="presskit-box">
+          <div class="presskit-layout">
+            <div>
+              <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px;" data-i18n="presskit_title">Creator & Press Factsheet</h2>
+              <p class="section-desc" style="text-align: left; margin-bottom: 24px;" data-i18n="presskit_desc">
+                Official media assets, factsheets, transparent vessel renders, and logos for content creators.
+              </p>
+              <ul class="presskit-specs">
+                <li>
+                  <span class="spec-key" data-i18n="pk_studio">Developer</span>
+                  <span class="spec-val">Ezrok Studios (Ronald Korze)</span>
+                </li>
+                <li>
+                  <span class="spec-key" data-i18n="pk_genre">Genre</span>
+                  <span class="spec-val" data-i18n="pk_genre_val">2D Roguelite Space Auto-Shooter</span>
+                </li>
+                <li>
+                  <span class="spec-key" data-i18n="pk_platforms">Target Platforms</span>
+                  <span class="spec-val" data-i18n="pk_platforms_val">Windows PC &bull; Runs on Linux / Steam Deck via Proton (Native ports planned)</span>
+                </li>
+                <li>
+                  <span class="spec-key" data-i18n="pk_release">Release Cycle</span>
+                  <span class="spec-val" data-i18n="pk_release_val">Closed Preview 2</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Download Action Cards -->
+            <div class="presskit-downloads">
+              <a href="assets/game-logo.png" download class="download-btn-card">
+                <div class="dl-info">
+                  <span class="dl-name" data-i18n="dl_logos_title">Game Logo & Icons Pack</span>
+                  <span class="dl-meta" data-i18n="dl_logos_meta">PNG (Hi-Res & Alpha Favicon)</span>
+                </div>
+                <span class="dl-arrow">↓</span>
+              </a>
+
+              <a href="assets/ships/interceptor.png" download class="download-btn-card">
+                <div class="dl-info">
+                  <span class="dl-name" data-i18n="dl_ships_title">Transparent Ship Hull Sprites</span>
+                  <span class="dl-meta" data-i18n="dl_ships_meta">PNG (Interceptor, Scout, Heavy Fighter)</span>
+                </div>
+                <span class="dl-arrow">↓</span>
+              </a>
+
+              <button type="button" class="download-btn-card" data-modal="preview" style="width: 100%; border: 1px solid rgba(0, 240, 255, 0.2); background: rgba(6, 8, 14, 0.7); text-align: left; cursor: pointer;">
+                <div class="dl-info">
+                  <span class="dl-name" data-i18n="dl_factsheet_title">Press Factsheet & Description</span>
+                  <span class="dl-meta" data-i18n="dl_factsheet_meta">Available with Preview 2 (Soon)</span>
+                </div>
+                <span class="dl-arrow">◈</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer & Legal -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-info">
+          <div class="footer-logo">
+            <img src="assets/game-icon.png" alt="Astrofray Game Icon">
+            <span class="brand-title">Astrofray</span>
+          </div>
+          <p class="footer-desc" data-i18n="footer_desc">
+            Survive the swarm, master kinetic asteroid cover, and build devastating weapon synergies in deep space. Developed by Ezrok Studios.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <div>
+            <div class="footer-col-title" data-i18n="footer_col_nav">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="#features" data-i18n="nav_features">Features</a></li>
+              <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
+              <li><a href="#presskit" data-i18n="nav_presskit">Press Kit</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title" data-i18n="footer_col_community">Community & Channels</div>
+            <ul class="footer-links">
+              <li><button type="button" class="coming-soon-btn" data-modal="preview">Discord Community (Soon)</button></li>
+              <li><button type="button" class="coming-soon-btn" data-modal="preview">itch.io Storefront (Soon)</button></li>
+              <li><a href="https://github.com/ezrokstudios/astrofray" target="_blank" rel="noopener">GitHub Organization</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title" data-i18n="footer_col_legal">Legal</div>
+            <ul class="footer-links">
+              <li><button type="button" class="legal-trigger" data-modal="imprint" data-i18n="footer_imprint">Imprint (Impressum)</button></li>
+              <li><button type="button" class="legal-trigger" data-modal="privacy" data-i18n="footer_privacy">Privacy Policy (Datenschutz)</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Ezrok Studios (Ronald Korze). <span data-i18n="footer_rights">All rights reserved.</span></div>
+        <div>Traun, Austria &bull; <a href="mailto:ezrokstudios@proton.me" style="color: var(--neon-cyan); text-decoration: none;">ezrokstudios@proton.me</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Unified Modal (Coming Soon / Impressum / Privacy) -->
+  <div class="modal-overlay" id="legal-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Notice</h3>
+        <button type="button" class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript based on selected modal type and language -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
 </body>
 </html>
