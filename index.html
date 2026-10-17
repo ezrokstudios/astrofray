@@ -126,6 +126,8 @@
   }
   </script>
 
+
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -160,8 +162,6 @@
           <button class="lang-btn active" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-
-        <button type="button" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.8rem;" data-modal="preview" data-i18n="nav_cta">Join Preview</button>
       </div>
     </div>
   </header>
@@ -173,15 +173,15 @@
     <section class="hero" id="preview">
       <div class="container">
         
-        <div class="hero-logo-wrapper">
-          <img src="assets/game-logo.png" alt="Astrofray Game Logo" class="hero-logo">
+        <!-- Real-Time Procedural Neon Logo (Exact Unity URP Shader running in WebGL) -->
+        <div class="hero-logo-wrapper" id="heroLogoContainer" title="Astrofray">
+          <canvas id="heroLogoCanvas" width="2048" height="512" class="astrofray-logo-canvas" aria-label="Astrofray Game Logo"></canvas>
+          <img id="heroLogoFallback" src="assets/game-logo.png" alt="Astrofray Game Logo" class="astrofray-logo-fallback" style="display: none;">
         </div>
-
-        <br>
 
         <div class="hero-status-pill">
           <span class="pulse-dot"></span>
-          <span data-i18n="hero_status">Closed Preview 2 Deployment Inbound</span>
+          <span data-i18n="hero_status">Closed Preview 2 Inbound</span>
         </div>
 
         <h1 class="hero-slogan" data-i18n="hero_slogan">
@@ -214,7 +214,7 @@
         
         <div class="section-header">
           <div class="section-tag" data-i18n="usp_tag">Tactical Combat Depth</div>
-          <h2 class="section-title" data-i18n="usp_title">High-Speed Evasion & Survival Mechanics</h2>
+          <h2 class="section-title" data-i18n="usp_title">High-Speed Evasion &amp; Tactical Survival</h2>
           <p class="section-desc" data-i18n="usp_desc">
             Engineered around aggressive positioning, deterministic physics, and high-risk salvage economics.
           </p>
@@ -227,7 +227,7 @@
           <article class="feature-card">
             <div class="feature-header">
               <div class="feature-icon-badge">☄</div>
-              <h3 class="feature-title" data-i18n="feature_asteroid_title">Physics Asteroids as Cover</h3>
+              <h3 class="feature-title" data-i18n="feature_asteroid_title">Physics Asteroids as Dynamic Cover</h3>
             </div>
             <p class="feature-text" data-i18n="feature_asteroid_text">
               Drifting asteroid clusters feature authentic 2D rigid-body kinematics. Maneuver behind dense rocks to absorb relentless bullet-hell salvos. Under heavy ballistic pressure, large asteroids fracture into smaller shards—or get punched straight through by penetrating plasma rounds.
@@ -246,7 +246,7 @@
               <h3 class="feature-title" data-i18n="feature_boss_title">Multi-Phase Dreadnought Bosses</h3>
             </div>
             <p class="feature-text" data-i18n="feature_boss_text">
-              Face gargantuan command vessels and alien horrors like the Brood Queen across the 10 campaign waves. Bosses cannot simply be burned down: systematically eliminate perimeter point-defense turrets and shield generators before breaching the exposed reactor core.
+              Face gargantuan command vessels and alien horrors like the Brood Queen across 10 escalating campaign waves. Bosses cannot simply be burned down: systematically eliminate perimeter point-defense turrets before breaching the exposed reactor core.
             </p>
             <div class="feature-specs">
               <span class="spec-chip" data-i18n="feature_boss_spec1">Hierarchical Hitboxes</span>
@@ -262,11 +262,11 @@
               <h3 class="feature-title" data-i18n="feature_scrap_title">The 33% Scrap Tax (Greed vs. Safety)</h3>
             </div>
             <p class="feature-text" data-i18n="feature_scrap_text">
-              Defeated enemies detonate into glowing Scrap in the middle of active crossfire. Collect drops actively during combat for 100% value, or play safely and wait for the wave-end auto-vacuum—which deducts a 33% recovery tax (granting only 2/3 value).
+              Defeated enemies detonate into glowing Scrap in the heart of the crossfire. Scoop up drops actively during combat for full 100% value, or play it safe and wait for the wave-end auto-vacuum—which claims a 33% salvage tax, granting only 2/3 value.
             </p>
             <div class="feature-specs">
               <span class="spec-chip" data-i18n="feature_scrap_spec1">Realtime Salvage (100%)</span>
-              <span class="spec-chip" data-i18n="feature_scrap_spec2">Greed Incentives</span>
+              <span class="spec-chip" data-i18n="feature_scrap_spec2">High-Risk Incentive</span>
               <span class="spec-chip" data-i18n="feature_scrap_spec3">Auto-Vacuum (2/3 Value)</span>
             </div>
           </article>
@@ -278,7 +278,7 @@
               <h3 class="feature-title" data-i18n="feature_arsenal_title">Modular Arsenal & Weapon Merging</h3>
             </div>
             <p class="feature-text" data-i18n="feature_arsenal_text">
-              Automated weaponry fires continuously based on predictive targeting. Purchase and merge duplicate weapons in the Upgrade Shop (MK1 → MK2 → MK3) across three distinct weapon families: rapid-fire Machine Guns, chain-disrupting Ion Blasters, and armor-penetrating Plasma Cannons. Lock favorite shop cards to save them across rerolls.
+              Automated weaponry fires continuously with predictive targeting. Purchase and merge duplicate weapons in the Upgrade Shop (MK1 → MK2 → MK3) across three distinct weapon families: high-DPS Machine Guns, versatile Ion Blasters, and asteroid-piercing Plasma Cannons. Lock favorite shop cards to save them across rerolls.
             </p>
             <div class="feature-specs">
               <span class="spec-chip" data-i18n="feature_arsenal_spec1">Predictive Autofire</span>
@@ -309,7 +309,7 @@
               <h3 class="ship-name" data-i18n="ship1_name">Interceptor</h3>
               <div class="ship-archetype" data-i18n="ship1_archetype">Ultra-Agile Skirmisher</div>
               <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship1_desc">
-                Relies on lightning-fast acceleration and 3 rapid thruster dashes with 0.25s invulnerability frames (i-frames) to thread the needle through dense bullet curtains.
+                Relies on blistering acceleration and 3 rapid thruster dashes with 0.25s invulnerability frames (i-frames) to thread the needle through dense bullet curtains.
               </p>
             </article>
 
@@ -319,9 +319,9 @@
                 <img src="assets/ships/scoutfighter.png" alt="Astrofray Scout Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship2_name">Scout Fighter</h3>
-              <div class="ship-archetype" data-i18n="ship2_archetype">Balanced Fleet Scout</div>
+              <div class="ship-archetype" data-i18n="ship2_archetype">Tactical Fleet All-Rounder</div>
               <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship2_desc">
-                Versatile operational profile with balanced thrusters and hardpoints, accommodating flexible combinations of ballistic and energy weaponry with 2 dash charges.
+                Versatile operational profile with balanced thrusters and 3 hardpoints, accommodating flexible combinations of ballistic and energy weaponry with 2 dash charges.
               </p>
             </article>
 
@@ -331,7 +331,7 @@
                 <img src="assets/ships/heavyfighter.png" alt="Astrofray Heavy Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship3_name">Heavy Fighter</h3>
-              <div class="ship-archetype" data-i18n="ship3_archetype">Armored Dreadnought</div>
+              <div class="ship-archetype" data-i18n="ship3_archetype">Armored Gunship</div>
               <p class="feature-text" style="font-size: 0.9rem;" data-i18n="ship3_desc">
                 A 5-mount heavy gunship featuring fortified hull plating with built-in damage reduction and an emergency dash, built to anchor the line against overwhelming swarms.
               </p>
@@ -365,7 +365,7 @@
                 </li>
                 <li>
                   <span class="spec-key" data-i18n="pk_platforms">Target Platforms</span>
-                  <span class="spec-val" data-i18n="pk_platforms_val">Windows PC &bull; Runs on Linux / Steam Deck via Proton (Native ports planned)</span>
+                  <span class="spec-val" data-i18n="pk_platforms_val">Windows PC &bull; Runs smoothly on Linux &amp; Steam Deck via Proton (Native ports planned)</span>
                 </li>
                 <li>
                   <span class="spec-key" data-i18n="pk_release">Release Cycle</span>
@@ -418,7 +418,7 @@
             <span class="brand-title">Astrofray</span>
           </div>
           <p class="footer-desc" data-i18n="footer_desc">
-            Survive the swarm, master kinetic asteroid cover, and build devastating weapon synergies in deep space. Developed by Ezrok Studios.
+            Survive the swarm, master kinetic asteroid cover, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.
           </p>
         </div>
 
@@ -435,9 +435,9 @@
           <div>
             <div class="footer-col-title" data-i18n="footer_col_community">Community & Channels</div>
             <ul class="footer-links">
-              <li><button type="button" class="coming-soon-btn" data-modal="preview">Discord Community (Soon)</button></li>
-              <li><button type="button" class="coming-soon-btn" data-modal="preview">itch.io Storefront (Soon)</button></li>
-              <li><a href="https://github.com/ezrokstudios/astrofray" target="_blank" rel="noopener">GitHub Organization</a></li>
+              <li><button type="button" class="coming-soon-btn" data-modal="preview" data-i18n="footer_discord">Discord Community (Soon)</button></li>
+              <li><button type="button" class="coming-soon-btn" data-modal="preview" data-i18n="footer_itch">itch.io Storefront (Soon)</button></li>
+              <li><a href="https://github.com/ezrokstudios/astrofray" target="_blank" rel="noopener" data-i18n="footer_github">GitHub Organization</a></li>
             </ul>
           </div>
 

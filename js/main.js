@@ -17,7 +17,7 @@ const translations = {
     nav_presskit: "Press Kit",
     nav_cta: "Join Preview",
 
-    hero_status: "Closed Preview 2 Deployment Inbound",
+    hero_status: "Closed Preview 2 Inbound",
     hero_slogan: "Survive the Swarm.<br><span class=\"neon-text-cyan\">Use the Debris.</span><br>Merge Your Arsenal.",
     hero_subtitle: "A fast-paced neon-industrial 2D space arena roguelite auto-shooter. Weave through bullet-hell curtains behind fracturing physics asteroids, execute split-second thruster dashes, and dismantle multi-phase dreadnought bosses.",
     hero_cta_discord: "Get Preview Password (Discord)",
@@ -25,29 +25,29 @@ const translations = {
     hero_cta_github: "View on GitHub",
 
     usp_tag: "Tactical Combat Depth",
-    usp_title: "High-Speed Evasion & Survival Mechanics",
+    usp_title: "High-Speed Evasion & Tactical Survival",
     usp_desc: "Engineered around aggressive positioning, deterministic physics, and high-risk salvage economics.",
 
-    feature_asteroid_title: "Physics Asteroids as Cover",
+    feature_asteroid_title: "Physics Asteroids as Dynamic Cover",
     feature_asteroid_text: "Drifting asteroid clusters feature authentic 2D rigid-body kinematics. Maneuver behind dense rocks to absorb relentless bullet-hell salvos. Under heavy ballistic pressure, large asteroids fracture into smaller shards—or get punched straight through by penetrating plasma rounds.",
     feature_asteroid_spec1: "Kinetic Deflection",
     feature_asteroid_spec2: "Dynamic Fracture",
     feature_asteroid_spec3: "Plasma Piercing",
 
     feature_boss_title: "Multi-Phase Dreadnought Bosses",
-    feature_boss_text: "Face gargantuan command vessels and alien horrors like the Brood Queen across the 10 campaign waves. Bosses cannot simply be burned down: systematically eliminate perimeter point-defense turrets and shield generators before breaching the exposed reactor core.",
+    feature_boss_text: "Face gargantuan command vessels and alien horrors like the Brood Queen across 10 escalating campaign waves. Bosses cannot simply be burned down: systematically eliminate perimeter point-defense turrets before breaching the exposed reactor core.",
     feature_boss_spec1: "Hierarchical Hitboxes",
     feature_boss_spec2: "Turret Destruction",
     feature_boss_spec3: "Core Overload",
 
     feature_scrap_title: "The 33% Scrap Tax (Greed vs. Safety)",
-    feature_scrap_text: "Defeated enemies detonate into glowing Scrap in the middle of active crossfire. Collect drops actively during combat for 100% value, or play safely and wait for the wave-end auto-vacuum—which deducts a 33% recovery tax (granting only 2/3 value).",
+    feature_scrap_text: "Defeated enemies detonate into glowing Scrap in the heart of the crossfire. Scoop up drops actively during combat for full 100% value, or play it safe and wait for the wave-end auto-vacuum—which claims a 33% salvage tax, granting only 2/3 value.",
     feature_scrap_spec1: "Realtime Salvage (100%)",
-    feature_scrap_spec2: "Greed Incentives",
+    feature_scrap_spec2: "High-Risk Incentive",
     feature_scrap_spec3: "Auto-Vacuum (2/3 Value)",
 
     feature_arsenal_title: "Modular Arsenal & Weapon Merging",
-    feature_arsenal_text: "Automated weaponry fires continuously based on predictive targeting. Purchase and merge duplicate weapons in the Upgrade Shop (MK1 → MK2 → MK3) across three distinct weapon families: rapid-fire Machine Guns, chain-disrupting Ion Blasters, and armor-penetrating Plasma Cannons. Lock favorite shop cards to save them across rerolls.",
+    feature_arsenal_text: "Automated weaponry fires continuously with predictive targeting. Purchase and merge duplicate weapons in the Upgrade Shop (MK1 → MK2 → MK3) across three distinct weapon families: high-DPS Machine Guns, versatile Ion Blasters, and asteroid-piercing Plasma Cannons. Lock favorite shop cards to save them across rerolls.",
     feature_arsenal_spec1: "Predictive Autofire",
     feature_arsenal_spec2: "MK1 → MK3 Fusion",
     feature_arsenal_spec3: "Shop Card Locking",
@@ -58,14 +58,14 @@ const translations = {
 
     ship1_name: "Interceptor",
     ship1_archetype: "Ultra-Agile Skirmisher",
-    ship1_desc: "Relies on lightning-fast acceleration and 3 rapid thruster dashes with 0.25s invulnerability frames (i-frames) to thread the needle through dense bullet curtains.",
+    ship1_desc: "Relies on blistering acceleration and 3 rapid thruster dashes with 0.25s invulnerability frames (i-frames) to thread the needle through dense bullet curtains.",
 
     ship2_name: "Scout Fighter",
-    ship2_archetype: "Balanced Fleet Scout",
-    ship2_desc: "Versatile operational profile with balanced thrusters and hardpoints, accommodating flexible combinations of ballistic and energy weaponry with 2 dash charges.",
+    ship2_archetype: "Tactical Fleet All-Rounder",
+    ship2_desc: "Versatile operational profile with balanced thrusters and 3 hardpoints, accommodating flexible combinations of ballistic and energy weaponry with 2 dash charges.",
 
     ship3_name: "Heavy Fighter",
-    ship3_archetype: "Armored Dreadnought",
+    ship3_archetype: "Armored Gunship",
     ship3_desc: "A 5-mount heavy gunship featuring fortified hull plating with built-in damage reduction and an emergency dash, built to anchor the line against overwhelming swarms.",
 
     presskit_title: "Creator & Press Factsheet",
@@ -74,7 +74,7 @@ const translations = {
     pk_genre: "Genre",
     pk_genre_val: "2D Roguelite Space Auto-Shooter",
     pk_platforms: "Target Platforms",
-    pk_platforms_val: "Windows PC • Runs on Linux & Steam Deck via Proton (Native ports planned)",
+    pk_platforms_val: "Windows PC • Runs smoothly on Linux & Steam Deck via Proton (Native ports planned)",
     pk_release: "Release Cycle",
     pk_release_val: "Closed Preview 2",
 
@@ -85,10 +85,13 @@ const translations = {
     dl_factsheet_title: "Press Factsheet & Description",
     dl_factsheet_meta: "Available with Preview 2 (Soon)",
 
-    footer_desc: "Survive the swarm, master kinetic asteroid cover, and build devastating weapon synergies in deep space. Developed by Ezrok Studios.",
+    footer_desc: "Survive the swarm, master kinetic asteroid cover, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.",
     footer_col_nav: "Navigation",
     footer_col_community: "Community & Channels",
     footer_col_legal: "Legal",
+    footer_discord: "Discord Community (Soon)",
+    footer_itch: "itch.io Storefront (Soon)",
+    footer_github: "GitHub Organization",
     footer_imprint: "Imprint (Impressum)",
     footer_privacy: "Privacy Policy (Datenschutz)",
     footer_rights: "All rights reserved."
@@ -102,78 +105,81 @@ const translations = {
     nav_presskit: "Presse-Kit",
     nav_cta: "Zur Preview",
 
-    hero_status: "Bereitstellung von Closed Preview 2 steht bevor",
+    hero_status: "Closed Preview 2 im Anflug",
     hero_slogan: "Überlebe den Schwarm.<br><span class=\"neon-text-cyan\">Nutze die Trümmer.</span><br>Fusioniere dein Arsenal.",
-    hero_subtitle: "Ein rasanter Neon-Industrial 2D-Weltraum-Roguelite-Auto-Shooter. Weiche Bullet-Hell-Schleiern im Schutz splitternder Physik-Asteroiden aus, nutze den Triebwerks-Dash für Unverwundbarkeits-Frames und zerlege mehrphasige Dreadnought-Bosse.",
+    hero_subtitle: "Ein rasanter Neon-Industrial 2D-Weltraum-Roguelite-Auto-Shooter. Gleite im Schutz splitternder Physik-Asteroiden durch dichte Bullet-Hell-Schleier, nutze den Triebwerks-Dash für lebensrettende Unverwundbarkeits-Frames und zerlege mehrphasige Dreadnought-Bosse.",
     hero_cta_discord: "Preview-Passwort holen (Discord)",
     hero_cta_itch: "Closed Preview auf itch.io (In Kürze)",
     hero_cta_github: "Auf GitHub ansehen",
 
     usp_tag: "Taktischer Tiefgang",
-    usp_title: "Präzises Dogfighting & Überlebensmechaniken",
-    usp_desc: "Entwickelt für High-Speed-Ausweichmanöver, deterministische Physik und lohnende Risikobereitschaft.",
+    usp_title: "Rasantes Dogfighting & Taktisches Überleben",
+    usp_desc: "Entwickelt für aggressive Positionierung, deterministische Physik und die Verlockung riskanter Bergungsmanöver.",
 
-    feature_asteroid_title: "Physik-Asteroiden als Deckung",
+    feature_asteroid_title: "Physik-Asteroiden als kinetische Deckung",
     feature_asteroid_text: "Driftende Asteroidenfelder verfügen über echte 2D-Starrkörper-Physik. Nutze schwere Gesteinsbrocken als Deckung, um unerbittliche Bullet-Hell-Salven abzufangen. Bei schwerem Beschuss zersplittern große Asteroiden in kleinere Trümmer – oder werden von Plasma direkt durchschlagen.",
     feature_asteroid_spec1: "Kinetische Ablenkung",
     feature_asteroid_spec2: "Dynamisches Zersplittern",
     feature_asteroid_spec3: "Plasma-Durchschlag",
 
     feature_boss_title: "Mehrphasige Dreadnought-Bosse",
-    feature_boss_text: "Stelle dich kolossalen Kommandoschiffen und Alien-Horden wie der Brood Queen im Verlauf der 10 Kampagnen-Wellen. Bosse können nicht einfach niedergebrannt werden: Zerstöre erst äußere Geschütztürme und Schildgeneratoren, bevor der überhitzte Reaktorkern verwundbar wird.",
+    feature_boss_text: "Stelle dich kolossalen Kommandoschiffen und Alien-Horrors wie der Brood Queen im Verlauf der 10 Kampagnen-Wellen. Bosse lassen sich nicht einfach niederbrennen: Zerstöre zuerst die äußeren Geschütztürme, bevor der freiliegende Reaktorkern verwundbar wird.",
     feature_boss_spec1: "Hierarchische Hitboxen",
     feature_boss_spec2: "Turm-Zerstörung",
     feature_boss_spec3: "Kern-Überhitzung",
 
     feature_scrap_title: "Die 33% Schrott-Steuer (Gier vs. Sicherheit)",
-    feature_scrap_text: "Besiegte Feinde hinterlassen leuchtenden Schrott mitten im feindlichen Kreuzfeuer. Sammle Schrott im Kampf für vollen 100% Wert – oder warte auf den Auto-Sauger am Wellenende, der einen Abschlag von 33% einbehält (bringt nur 2/3 Wert).",
+    feature_scrap_text: "Besiegte Feinde detonieren mitten im Kreuzfeuer zu leuchtendem Schrott. Sammle Schrott aktiv im Gefecht für den vollen 100%-Wert – oder gehe auf Nummer sicher und warte auf den Auto-Sauger am Wellenende, der einen Abschlag von 33% einbehält (bringt nur 2/3 Wert).",
     feature_scrap_spec1: "Echtzeit-Bergung (100%)",
-    feature_scrap_spec2: "Gier-Belohnung",
+    feature_scrap_spec2: "High-Risk-Belohnung",
     feature_scrap_spec3: "Auto-Sauger (2/3 Wert)",
 
     feature_arsenal_title: "Modulares Arsenal & Waffenfusion",
-    feature_arsenal_text: "Automatische Bordwaffen feuern kontinuierlich mit vorausschauender Zielerfassung. Kaufe und fusioniere gleiche Waffen im Upgrade-Shop (MK1 → MK2 → MK3) aus drei verschiedenen Waffenfamilien: Schnellfeuer-Maschinengewehre, Ionenblaster und panzerbrechende Plasmakanonen. Sperre Shop-Karten, um sie über Rerolls hinweg aufzubewahren.",
+    feature_arsenal_text: "Bordwaffen feuern vollautomatisch mit prädiktiver Zielerfassung. Kaufe und fusioniere gleiche Waffen im Upgrade-Shop (MK1 → MK2 → MK3) aus drei eigenständigen Waffenfamilien: durchschlagskräftige Maschinengewehre, vielseitige Ionenblaster und asteroidenbrechende Plasmakanonen. Sperre wichtige Shop-Karten, um sie über Rerolls hinweg zu sichern.",
     feature_arsenal_spec1: "Prädiktive Zielautomatik",
     feature_arsenal_spec2: "MK1 → MK3 Fusion",
-    feature_arsenal_spec3: "Karten-Sperren im Shop",
+    feature_arsenal_spec3: "Shop-Karten sperren",
 
     ships_tag: "Schiffsklassen",
     ships_title: "Einsatzbereite Schiffshüllen",
-    ships_desc: "Wähle das Chassis, das perfekt zu deiner Überlebensstrategie passt – vom extrem wendigen Abfangjäger bis zum schwer gepanzerten Waffen-Dreadnought.",
+    ships_desc: "Wähle ein Schiff passend zu deiner Taktik – vom ultra-wendigen Skirmisher bis zur schwer gepanzerten Waffenplattform.",
 
     ship1_name: "Abfangjäger (Interceptor)",
     ship1_archetype: "Ultra-agiler Skirmisher",
     ship1_desc: "Setzt auf blitzschnelle Beschleunigung und 3 Triebwerks-Dashes mit 0,25s Unverwundbarkeit (i-frames), um haarscharf durch dichte Kugelvorhänge zu gleiten.",
 
     ship2_name: "Aufklärungsjäger (Scout Fighter)",
-    ship2_archetype: "Ausgewogener Flotten-Scout",
-    ship2_desc: "Vielseitiges Einsatzprofil mit optimal austarierten Triebwerken und Waffenplätzen für flexible Ballistik- und Energiewaffen-Builds mit 2 Dash-Ladungen.",
+    ship2_archetype: "Taktischer Allrounder",
+    ship2_desc: "Vielseitiges Einsatzprofil mit optimal abgestimmten Triebwerken und 3 Waffenplätzen für flexible Ballistik- und Energiewaffen-Builds mit 2 Dash-Ladungen.",
 
     ship3_name: "Schwerer Jäger (Heavy Fighter)",
-    ship3_archetype: "Gepanzerte Festung",
-    ship3_desc: "Ein schweres 5-Waffen-Schiff mit verstärkter Hülle, integrierter Schadensreduktion und einem Notfall-Dash – gebaut, um gewaltigen Schwärmen standzuhalten.",
+    ship3_archetype: "Gepanzerte Waffenplattform",
+    ship3_desc: "Ein schweres 5-Waffen-Kriegsschiff mit verstärkter Hülle, integrierter Schadensreduktion und einem Notfall-Dash – gebaut, um gewaltigen Schwärmen standzuhalten.",
 
     presskit_title: "Creator- & Presse-Factsheet",
-    presskit_desc: "Offizielle Medien-Assets, Factsheets, transparente Schiffsgrafiken und Logos für Content-Creator.",
+    presskit_desc: "Offizielle Medien-Assets, Factsheets, freigestellte Schiffsgrafiken und Logos für Content-Creator.",
     pk_studio: "Entwickler",
     pk_genre: "Genre",
     pk_genre_val: "2D-Roguelite-Weltraum-Auto-Shooter",
     pk_platforms: "Plattformen",
-    pk_platforms_val: "Windows PC • Läuft auf Linux & Steam Deck über Proton (Native Ports geplant)",
+    pk_platforms_val: "Windows PC • Läuft dank Proton einwandfrei auf Linux & Steam Deck (Native Ports geplant)",
     pk_release: "Release-Zyklus",
     pk_release_val: "Closed Preview 2",
 
     dl_logos_title: "Logo- & Icon-Paket",
     dl_logos_meta: "PNG (Hohe Auflösung & Alpha Favicon)",
     dl_ships_title: "Transparente Schiffsgrafiken",
-    dl_ships_meta: "PNG (Interceptor, Scout, Heavy Fighter)",
+    dl_ships_meta: "PNG (Abfangjäger, Aufklärer, Schwerer Jäger)",
     dl_factsheet_title: "Presse-Factsheet & Beschreibungen",
     dl_factsheet_meta: "Verfügbar mit Preview 2 (In Kürze)",
 
-    footer_desc: "Überlebe den Schwarm, nutze Asteroiden als kinetische Deckung und schmiede verheerende Waffensynergien in den Weiten des Alls. Entwickelt von Ezrok Studios.",
+    footer_desc: "Überlebe den Schwarm, nutze Asteroiden als kinetische Deckung und schmiede verheerende Waffensynergien im Weltraum. Entwickelt von Ezrok Studios.",
     footer_col_nav: "Navigation",
     footer_col_community: "Community & Kanäle",
     footer_col_legal: "Rechtliches",
+    footer_discord: "Discord-Community (In Kürze)",
+    footer_itch: "itch.io-Storefront (In Kürze)",
+    footer_github: "GitHub-Organisation",
     footer_imprint: "Impressum",
     footer_privacy: "Datenschutzerklärung",
     footer_rights: "Alle Rechte vorbehalten."
@@ -266,7 +272,7 @@ const legalContent = {
           Access to <strong>Closed Preview 2</strong> on itch.io and invitations to our official Discord playtesting server will launch soon!
         </p>
         <p style="margin-bottom: 16px;">
-          We are currently preparing the upcoming test build and community feedback channels. Check back here soon or keep an eye on our GitHub updates!
+          We are currently polishing the latest build, calibrating boss encounters, and setting up community feedback channels. Check back here soon or keep an eye on our GitHub updates!
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Platform Support:</strong> Windows PC standalone. Tested and runs smoothly on Linux desktop and Steam Deck via Steam Proton.
@@ -288,7 +294,7 @@ const legalContent = {
           Der Zugang zur <strong>Closed Preview 2</strong> auf itch.io sowie Einladungen zu unserem offiziellen Discord-Playtesting-Server starten in Kürze!
         </p>
         <p style="margin-bottom: 16px;">
-          Wir bereiten derzeit den neuen Test-Build und die Feedback-Kanäle vor. Schau bald wieder vorbei oder verfolge unsere Updates auf GitHub!
+          Wir feilen aktuell am neuesten Build, verfeinern die Boss-Begegnungen und bereiten die Community-Kanäle vor. Schau bald wieder vorbei oder verfolge unsere Updates auf GitHub!
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Plattform-Unterstützung:</strong> Windows PC Standalone. Getestet und läuft dank Steam Proton einwandfrei auf Linux und dem Steam Deck.
@@ -415,7 +421,234 @@ function initModals() {
 }
 
 // ==========================================
-// 4. INITIALIZATION ON DOM READY
+// 4. REAL-TIME IN-GAME SHADER LOGO (WEBGL)
+// Replicates Src/Astrofray/Assets/Shaders/AstrofrayLogoGlow.shader
+// ==========================================
+const LOGO_MASK_BASE64 = 'data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkJX4/wGH283aBIjz7wAAAABJRU5ErkJggg==';
+
+function initHeroLogoShader() {
+  const canvas = document.getElementById('heroLogoCanvas');
+  const fallback = document.getElementById('heroLogoFallback');
+  const container = document.getElementById('heroLogoContainer');
+  if (!canvas) return;
+
+  function showFallback() {
+    canvas.style.display = 'none';
+    if (fallback) fallback.style.display = 'block';
+  }
+
+  const gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true });
+  if (!gl) {
+    console.warn('WebGL not supported, using fallback static logo.');
+    showFallback();
+    return;
+  }
+
+  const vsSource = `
+    attribute vec2 aPos;
+    varying vec2 vUv;
+    void main() {
+      vUv = aPos * 0.5 + 0.5;
+      gl_Position = vec4(aPos, 0.0, 1.0);
+    }
+  `;
+
+  const fsSource = `
+    precision highp float;
+    varying vec2 vUv;
+    uniform sampler2D uTex;
+    uniform float uTime;
+
+    // Evaluates 4-color horizontal neon gradient matching in-game shader
+    vec4 evaluateGradient(float x) {
+      x = clamp(x, 0.0, 1.0);
+      vec4 c1 = vec4(0.416, 1.0, 0.0, 1.0);
+      vec4 c2 = vec4(0.0, 1.0, 1.0, 1.0);
+      vec4 c3 = vec4(0.25, 0.25, 1.0, 1.0);
+      vec4 c4 = vec4(1.0, 0.0, 0.667, 1.0);
+
+      if (x < 0.38) {
+        float t = x / 0.38;
+        return mix(c1, c2, smoothstep(0.0, 1.0, t));
+      } else if (x < 0.65) {
+        float t = (x - 0.38) / (0.65 - 0.38);
+        return mix(c2, c3, smoothstep(0.0, 1.0, t));
+      } else {
+        float t = (x - 0.65) / (1.0 - 0.65);
+        return mix(c3, c4, smoothstep(0.0, 1.0, t));
+      }
+    }
+
+    void main() {
+      // Flip vertical texture coordinate for WebGL texture orientation
+      vec2 uv = vec2(vUv.x, 1.0 - vUv.y);
+      float baseAlpha = texture2D(uTex, uv).a;
+
+      // 1. Procedural breathing glow pulse matching Unity shader
+      // _GlowPulseSpeed = 2.0, _GlowPulseAmount = 0.25, _GlowRadius = 0.015
+      float pulse = 1.0 + 0.25 * sin(uTime * 2.0);
+      float currentRadius = 0.015 * pulse;
+
+      vec2 offsets[12];
+      offsets[0] = vec2( 1.0,  0.0); offsets[1] = vec2(-1.0,  0.0);
+      offsets[2] = vec2( 0.0,  1.0); offsets[3] = vec2( 0.0, -1.0);
+      offsets[4] = vec2( 0.707,  0.707); offsets[5] = vec2(-0.707,  0.707);
+      offsets[6] = vec2( 0.707, -0.707); offsets[7] = vec2(-0.707, -0.707);
+      offsets[8] = vec2( 0.5,  0.866); offsets[9] = vec2(-0.5,  0.866);
+      offsets[10] = vec2( 0.5, -0.866); offsets[11] = vec2(-0.5, -0.866);
+
+      float glowSum = 0.0;
+      for (int i = 0; i < 12; i++) {
+        vec2 uv1 = uv + offsets[i] * currentRadius;
+        vec2 uv2 = uv + offsets[i] * (currentRadius * 2.2);
+        glowSum += texture2D(uTex, uv1).a * 0.6;
+        glowSum += texture2D(uTex, uv2).a * 0.4;
+      }
+      float glowHalo = clamp(glowSum / 12.0, 0.0, 1.0);
+
+      // 2. Stroke / Hollow Outline Calculation (_OutlineThickness = 0.012)
+      float edgeSum = 0.0;
+      edgeSum += texture2D(uTex, uv + vec2( 0.012, 0.0)).a;
+      edgeSum += texture2D(uTex, uv + vec2(-0.012, 0.0)).a;
+      edgeSum += texture2D(uTex, uv + vec2(0.0,  0.012)).a;
+      edgeSum += texture2D(uTex, uv + vec2(0.0, -0.012)).a;
+      float strokeMask = clamp(abs(baseAlpha - (edgeSum * 0.25)), 0.0, 1.0);
+      float textMask = max(baseAlpha, strokeMask);
+
+      // 3. Shimmer wave traveling across horizontal UV.x
+      // _ShimmerSpeed = 1.2, _ShimmerWidth = 0.15, _ShimmerIntensity = 0.8
+      float shimmerPos = fract(uTime * 1.2 * 0.15);
+      float shimmerDist = abs(uv.x - shimmerPos);
+      float shimmerWave = smoothstep(0.15, 0.0, shimmerDist) * 0.8;
+
+      // 4. Evaluate horizontal 4-color gradient
+      vec4 gradientColor = evaluateGradient(uv.x);
+
+      // 5. Combine outer glow, colored stroke, and hot white core
+      // _GlowIntensity = 3.5, _CoreBrightness = 1.2
+      vec3 outerGlowCol = gradientColor.rgb * glowHalo * 3.5 * pulse;
+      vec3 strokeCol = gradientColor.rgb * textMask * 1.5;
+      vec3 coreCol = vec3(1.0) * baseAlpha * 1.2 * (1.0 + shimmerWave);
+
+      vec3 finalColor = outerGlowCol + strokeCol + coreCol;
+      float finalAlpha = clamp(glowHalo * 0.8 + textMask + baseAlpha, 0.0, 1.0);
+
+      // Premultiplied alpha output for accurate additive bloom against dark page background
+      gl_FragColor = vec4(finalColor, finalAlpha);
+    }
+  `;
+
+  function createShader(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+      console.error('Shader compile error:', gl.getShaderInfoLog(s));
+      gl.deleteShader(s);
+      return null;
+    }
+    return s;
+  }
+
+  const vs = createShader(gl.VERTEX_SHADER, vsSource);
+  const fs = createShader(gl.FRAGMENT_SHADER, fsSource);
+  if (!vs || !fs) {
+    showFallback();
+    return;
+  }
+
+  const program = gl.createProgram();
+  gl.attachShader(program, vs);
+  gl.attachShader(program, fs);
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.error('Program link error:', gl.getProgramInfoLog(program));
+    showFallback();
+    return;
+  }
+  gl.useProgram(program);
+
+  // Fullscreen quad buffer
+  const buffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+    -1, -1,
+     1, -1,
+    -1,  1,
+    -1,  1,
+     1, -1,
+     1,  1
+  ]), gl.STATIC_DRAW);
+
+  const aPos = gl.getAttribLocation(program, 'aPos');
+  gl.enableVertexAttribArray(aPos);
+  gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+  const uTex = gl.getUniformLocation(program, 'uTex');
+  const uTime = gl.getUniformLocation(program, 'uTime');
+
+  // Texture setup
+  const texture = gl.createTexture();
+  const img = new Image();
+  img.onload = () => {
+    gl.bindTexture(gl.TEXTURE_2D, texture);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
+
+    let startTime = performance.now();
+    function render(time) {
+      const elapsed = (time - startTime) * 0.001;
+      gl.viewport(0, 0, canvas.width, canvas.height);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+
+      gl.useProgram(program);
+      gl.uniform1i(uTex, 0);
+      gl.uniform1f(uTime, elapsed);
+      gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+      requestAnimationFrame(render);
+    }
+    requestAnimationFrame(render);
+  };
+
+  img.onerror = () => {
+    console.warn('Failed to load mask image, loading external asset...');
+    img.src = 'assets/game-logo-mask.png';
+  };
+
+  // Use embedded data URI for zero-latency, zero-CORS instant load
+  img.src = LOGO_MASK_BASE64;
+
+  // Interactive 3D mouse parallax tilt (desktop) & click surge
+  if (container) {
+    container.addEventListener('mousemove', (e) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      const rotateX = (-y / rect.height) * 8;
+      const rotateY = (x / rect.width) * 8;
+      container.style.transform = `perspective(700px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale(1.02)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.style.transform = '';
+    });
+
+    container.addEventListener('click', () => {
+      container.style.transform = 'scale(1.05)';
+      setTimeout(() => {
+        container.style.transform = '';
+      }, 260);
+    });
+  }
+}
+
+// ==========================================
+// 5. INITIALIZATION ON DOM READY
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
   // Determine preferred language: URL parameter, saved choice, or browser German detection
@@ -432,4 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize interactive modals
   initModals();
+
+  // Initialize real-time in-game WebGL shader logo
+  initHeroLogoShader();
 });
