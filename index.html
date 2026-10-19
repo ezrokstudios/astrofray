@@ -15,8 +15,16 @@
   <meta name="theme-color" content="#06070b">
   <meta name="color-scheme" content="dark">
 
+  <!-- Cache-Control & Anti-Caching Directives -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=0.4.0">
+
+  <!-- RSS / Info Feed Discovery -->
+  <link rel="alternate" type="application/rss+xml" title="Astrofray Devlog &amp; Updates" href="feed.xml">
 
   <!-- OpenGraph / Social Sharing (Discord, Reddit, Facebook) -->
   <meta property="og:site_name" content="Astrofray">
@@ -49,7 +57,7 @@
         "@id": "https://ezrokstudios.github.io/astrofray/#website",
         "url": "https://ezrokstudios.github.io/astrofray/",
         "name": "Astrofray",
-        "description": "Official landing page, press kit, and community portal for Astrofray by Ezrok Studios.",
+        "description": "Official landing page and community portal for Astrofray by Ezrok Studios.",
         "publisher": {
           "@id": "https://ezrokstudios.github.io/astrofray/#organization"
         },
@@ -130,7 +138,7 @@
 
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=0.4.0">
 </head>
 <body>
 
@@ -142,7 +150,7 @@
   <header class="navbar">
     <div class="container">
       <a href="#" class="nav-brand">
-        <img src="assets/game-icon.png" alt="Astrofray Game Icon">
+        <img src="assets/game-icon.png?v=0.4.0" alt="Astrofray Game Icon">
         <div class="brand-text">
           <span class="brand-title">Astrofray</span>
           <span class="brand-sub">Ezrok Studios</span>
@@ -153,7 +161,7 @@
         <ul class="nav-links">
           <li><a href="#features" data-i18n="nav_features">Features</a></li>
           <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
-          <li><a href="#presskit" data-i18n="nav_presskit">Press Kit</a></li>
+          <li><a href="#updates" data-i18n="nav_updates">Updates</a></li>
         </ul>
       </nav>
 
@@ -177,7 +185,7 @@
         <!-- Real-Time Procedural Neon Logo (Exact Unity URP Shader running in WebGL) -->
         <div class="hero-logo-wrapper" id="heroLogoContainer" title="Astrofray">
           <canvas id="heroLogoCanvas" width="2048" height="512" class="astrofray-logo-canvas" aria-label="Astrofray Game Logo"></canvas>
-          <img id="heroLogoFallback" src="assets/game-logo.png" alt="Astrofray Game Logo" class="astrofray-logo-fallback" style="display: none;">
+          <img id="heroLogoFallback" src="assets/game-logo.png?v=0.4.0" alt="Astrofray Game Logo" class="astrofray-logo-fallback" style="display: none;">
         </div>
 
         <div class="hero-status-pill">
@@ -305,7 +313,7 @@
             <!-- Ship 1: Interceptor -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/interceptor.png" alt="Astrofray Interceptor Ship Sprite">
+                <img src="assets/ships/interceptor.png?v=0.4.0" alt="Astrofray Interceptor Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship1_name">Interceptor</h3>
               <div class="ship-archetype" data-i18n="ship1_archetype">Ultra-Agile Skirmisher</div>
@@ -317,7 +325,7 @@
             <!-- Ship 2: Scout Fighter -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/scoutfighter.png" alt="Astrofray Scout Fighter Ship Sprite">
+                <img src="assets/ships/scoutfighter.png?v=0.4.0" alt="Astrofray Scout Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship2_name">Scout Fighter</h3>
               <div class="ship-archetype" data-i18n="ship2_archetype">Tactical Fleet All-Rounder</div>
@@ -329,7 +337,7 @@
             <!-- Ship 3: Heavy Fighter -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/heavyfighter.png" alt="Astrofray Heavy Fighter Ship Sprite">
+                <img src="assets/ships/heavyfighter.png?v=0.4.0" alt="Astrofray Heavy Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship3_name">Heavy Fighter</h3>
               <div class="ship-archetype" data-i18n="ship3_archetype">Armored Gunship</div>
@@ -344,70 +352,66 @@
       </div>
     </section>
 
-    <!-- Press Kit Section -->
-    <section class="presskit-section" id="presskit">
+    <!-- Devlog & Updates Section -->
+    <section class="updates-section" id="updates">
       <div class="container">
         
-        <div class="presskit-box">
-          <div class="presskit-layout">
-            <div>
-              <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px;" data-i18n="presskit_title">Creator & Press Factsheet</h2>
-              <p class="section-desc" style="text-align: left; margin-bottom: 24px;" data-i18n="presskit_desc">
-                Official media assets, factsheets, transparent vessel renders, and logos for content creators.
-              </p>
-              <ul class="presskit-specs">
-                <li>
-                  <span class="spec-key" data-i18n="pk_studio">Developer</span>
-                  <span class="spec-val">Ezrok Studios (Ronald Korze)</span>
-                </li>
-                <li>
-                  <span class="spec-key" data-i18n="pk_genre">Genre</span>
-                  <span class="spec-val" data-i18n="pk_genre_val">2D Roguelite Space Auto-Shooter</span>
-                </li>
-                <li>
-                  <span class="spec-key" data-i18n="pk_platforms">Target Platforms</span>
-                  <span class="spec-val" data-i18n="pk_platforms_val">Windows PC &bull; Runs smoothly on Linux &amp; Steam Deck via Proton (Native ports planned)</span>
-                </li>
-                <li>
-                  <span class="spec-key" data-i18n="pk_release">Release Cycle</span>
-                  <span class="spec-val" data-i18n="pk_release_val">Closed Preview 2</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Download Action Cards -->
-            <div class="presskit-downloads">
-              <a href="assets/game-logo.png" download class="download-btn-card">
-                <div class="dl-info">
-                  <span class="dl-name" data-i18n="dl_logos_title">Game Logo & Icons Pack</span>
-                  <span class="dl-meta" data-i18n="dl_logos_meta">PNG (Hi-Res & Alpha Favicon)</span>
-                </div>
-                <span class="dl-arrow">↓</span>
-              </a>
-
-              <a href="assets/ships/interceptor.png" download class="download-btn-card">
-                <div class="dl-info">
-                  <span class="dl-name" data-i18n="dl_ships_title">Transparent Ship Hull Sprites</span>
-                  <span class="dl-meta" data-i18n="dl_ships_meta">PNG (Interceptor, Scout, Heavy Fighter)</span>
-                </div>
-                <span class="dl-arrow">↓</span>
-              </a>
-
-              <button type="button" class="download-btn-card" data-modal="preview" style="width: 100%; border: 1px solid rgba(0, 240, 255, 0.2); background: rgba(6, 8, 14, 0.7); text-align: left; cursor: pointer;">
-                <div class="dl-info">
-                  <span class="dl-name" data-i18n="dl_factsheet_title">Press Factsheet & Description</span>
-                  <span class="dl-meta" data-i18n="dl_factsheet_meta">Available with Preview 2 (Soon)</span>
-                </div>
-                <span class="dl-arrow">◈</span>
-              </button>
-            </div>
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag" data-i18n="feed_tag">Devlog &amp; Changelog</div>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 8px;" data-i18n="feed_title">Latest Updates &amp; Patch Notes</h2>
+            <p class="section-desc" style="text-align: left; margin: 0;" data-i18n="feed_desc">
+              Track active gameplay calibrations, visual overhauls, and upcoming playtest milestones.
+            </p>
           </div>
+          <button type="button" class="btn btn-outline subscribe-cta-btn" data-modal="subscribe">
+            <span class="feed-pulse-icon">📡</span>
+            <span data-i18n="feed_subscribe_btn">Subscribe to Updates</span>
+          </button>
+        </div>
+
+        <div class="updates-grid">
+          
+          <!-- Update 1: v0.3.2 -->
+          <article class="update-card">
+            <div class="update-meta">
+              <span class="update-badge">v0.3.2</span>
+              <time datetime="2026-10-16" class="update-date">Oct 16, 2026</time>
+            </div>
+            <h3 class="update-headline" data-i18n="feed_t1_title">Overhauled Boss Explosions &amp; Target Tracking</h3>
+            <p class="update-summary" data-i18n="feed_t1_desc">
+              Major combat visual overhaul making boss takedowns significantly punchier, plus dynamic off-screen enemy indicators and frame-rate optimizations for dense bullet curtains.
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip">Boss FX</span>
+              <span class="spec-chip">Target Chevrons</span>
+              <span class="spec-chip">Performance</span>
+            </div>
+          </article>
+
+          <!-- Update 2: v0.3.1 -->
+          <article class="update-card">
+            <div class="update-meta">
+              <span class="update-badge">v0.3.1</span>
+              <time datetime="2026-10-14" class="update-date">Oct 14, 2026</time>
+            </div>
+            <h3 class="update-headline" data-i18n="feed_t2_title">Combat Visual Polish &amp; In-Battle Pause Settings</h3>
+            <p class="update-summary" data-i18n="feed_t2_desc">
+              Revamped space combat backdrops and impact flash feedback, mid-combat settings directly in the pause menu, and edge-case combat resume bugfixes.
+            </p>
+            <div class="feature-specs">
+              <span class="spec-chip">Backdrop Polish</span>
+              <span class="spec-chip">Pause Menu UI</span>
+              <span class="spec-chip">Bugfix</span>
+            </div>
+          </article>
+
         </div>
 
       </div>
     </section>
 
-  </main>
+    </main>
 
   <!-- Footer & Legal -->
   <footer class="footer">
@@ -415,12 +419,18 @@
       <div class="footer-top">
         <div class="footer-brand-info">
           <div class="footer-logo">
-            <img src="assets/game-icon.png" alt="Astrofray Game Icon">
+            <img src="assets/game-icon.png?v=0.4.0" alt="Astrofray Game Icon">
             <span class="brand-title">Astrofray</span>
           </div>
           <p class="footer-desc" data-i18n="footer_desc">
             Survive the swarm, master kinetic asteroid cover, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.
           </p>
+          <div class="footer-studio-badge">
+            <span class="studio-badge-label" data-i18n="footer_developed_by">DEVELOPED BY</span>
+            <div class="studio-logo-wrap" title="Ezrok Studios">
+              <img src="assets/ezrok-studios-logo.png?v=0.4.0" alt="Ezrok Studios Logo" class="footer-studio-img">
+            </div>
+          </div>
         </div>
 
         <div class="footer-nav">
@@ -429,7 +439,7 @@
             <ul class="footer-links">
               <li><a href="#features" data-i18n="nav_features">Features</a></li>
               <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
-              <li><a href="#presskit" data-i18n="nav_presskit">Press Kit</a></li>
+              <li><a href="#updates" data-i18n="nav_updates">Updates</a></li>
             </ul>
           </div>
 
@@ -439,6 +449,7 @@
               <li><button type="button" class="coming-soon-btn" data-modal="preview" data-i18n="footer_discord">Discord Community (Soon)</button></li>
               <li><button type="button" class="coming-soon-btn" data-modal="preview" data-i18n="footer_itch">itch.io Storefront (Soon)</button></li>
               <li><a href="https://github.com/ezrokstudios/astrofray" target="_blank" rel="noopener" data-i18n="footer_github">GitHub Organization</a></li>
+              <li><a href="feed.xml" target="_blank" rel="noopener" data-i18n="footer_feed">Info Feed (RSS)</a></li>
             </ul>
           </div>
 
@@ -472,7 +483,20 @@
     </div>
   </div>
 
+  <!-- Non-Intrusive Subscription HUD Toast -->
+  <aside class="feed-toast" id="feedToast" aria-label="Updates Announcement">
+    <div class="feed-toast-icon">📡</div>
+    <div class="feed-toast-content">
+      <div class="feed-toast-title" data-i18n="toast_title">Stay in Orbit!</div>
+      <div class="feed-toast-desc" data-i18n="toast_desc">Subscribe to patch notes &amp; game updates.</div>
+    </div>
+    <div class="feed-toast-actions">
+      <button type="button" class="feed-toast-btn" data-modal="subscribe" data-i18n="toast_btn">Subscribe</button>
+      <button type="button" class="feed-toast-dismiss" id="dismissToastBtn" aria-label="Dismiss">&times;</button>
+    </div>
+  </aside>
+
   <!-- Main JavaScript File -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=0.4.0"></script>
 </body>
 </html>

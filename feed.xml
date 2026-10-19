@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Astrofray | Devlog &amp; Updates</title>
+    <link>https://ezrokstudios.github.io/astrofray/</link>
+    <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Oct 2026 14:00:00 +0200</lastBuildDate>
+    <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
+      <title>Astrofray</title>
+      <link>https://ezrokstudios.github.io/astrofray/</link>
+    </image>
+
+    <!-- Entry 1: Version 0.3.2 -->
+    <item>
+      <title>Version 0.3.2 Live: Overhauled Boss Explosions &amp; Target Tracking</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.3.2</guid>
+      <pubDate>Fri, 16 Oct 2026 14:00:00 +0200</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.3.2 has been deployed with key combat feedback improvements:</p>
+        <ul>
+          <li><strong>Reworked Boss Explosions:</strong> Dreadnought takedowns are now significantly punchier with overhauled visual FX and shockwaves.</li>
+          <li><strong>Off-Screen Target Indicators:</strong> Dynamic chevron markers point toward out-of-view hostiles so you never lose the fight.</li>
+          <li><strong>Performance &amp; Polish:</strong> Frame-rate optimizations for dense bullet curtains and minor bug fixes.</li>
+        </ul>
+      ]]></description>
+    </item>
+
+    <!-- Entry 2: Version 0.3.1 -->
+    <item>
+      <title>Version 0.3.1 Live: Combat Polish &amp; Mid-Battle Settings</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.3.1</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 +0200</pubDate>
+      <description><![CDATA[
+        <p>Update v0.3.1 brings quality-of-life adjustments:</p>
+        <ul>
+          <li><strong>Better Combat Visuals:</strong> Revamped space backdrop and clearer hit feedback upon taking hull damage.</li>
+          <li><strong>Mid-Combat Settings:</strong> Adjust audio, controls, and display options directly from the in-combat pause menu.</li>
+          <li><strong>Combat Resume Fix:</strong> Resolved an edge-case bug where resuming a saved encounter prematurely triggered victory.</li>
+        </ul>
+      ]]></description>
+    </item>
+  </channel>
+</rss>

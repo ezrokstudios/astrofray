@@ -14,7 +14,7 @@ const translations = {
     meta_desc: "Survive bullet-hell curtains behind fracturing physics asteroids. Astrofray is a fast-paced 2D neon-industrial space roguelite auto-shooter by Ezrok Studios. Dodge, merge weapons, and defeat multi-phase dreadnoughts.",
     nav_features: "Features",
     nav_ships: "Ships",
-    nav_presskit: "Press Kit",
+    nav_updates: "Updates",
     nav_cta: "Join Preview",
 
     hero_status: "Closed Preview 2 Inbound",
@@ -68,22 +68,17 @@ const translations = {
     ship3_archetype: "Armored Gunship",
     ship3_desc: "A 5-mount heavy gunship featuring fortified hull plating with built-in damage reduction and an emergency dash, built to anchor the line against overwhelming swarms.",
 
-    presskit_title: "Creator & Press Factsheet",
-    presskit_desc: "Official media assets, factsheets, transparent vessel renders, and logos for content creators.",
-    pk_studio: "Developer",
-    pk_genre: "Genre",
-    pk_genre_val: "2D Roguelite Space Auto-Shooter",
-    pk_platforms: "Target Platforms",
-    pk_platforms_val: "Windows PC • Runs smoothly on Linux & Steam Deck via Proton (Native ports planned)",
-    pk_release: "Release Cycle",
-    pk_release_val: "Closed Preview 2",
-
-    dl_logos_title: "Game Logo & Icons Pack",
-    dl_logos_meta: "PNG (Hi-Res & Alpha Favicon)",
-    dl_ships_title: "Transparent Ship Hull Sprites",
-    dl_ships_meta: "PNG (Interceptor, Scout, Heavy Fighter)",
-    dl_factsheet_title: "Press Factsheet & Description",
-    dl_factsheet_meta: "Available with Preview 2 (Soon)",
+    feed_tag: "Devlog & Changelog",
+    feed_title: "Latest Updates & Patch Notes",
+    feed_desc: "Track active gameplay calibrations, visual overhauls, and upcoming playtest milestones.",
+    feed_subscribe_btn: "Subscribe to Updates",
+    feed_t1_title: "Overhauled Boss Explosions & Target Tracking",
+    feed_t1_desc: "Major combat visual overhaul making boss takedowns significantly punchier, plus dynamic off-screen enemy indicators and frame-rate optimizations for dense bullet curtains.",
+    feed_t2_title: "Combat Visual Polish & In-Battle Pause Settings",
+    feed_t2_desc: "Revamped space combat backdrops and impact flash feedback, mid-combat settings directly in the pause menu, and edge-case combat resume bugfixes.",
+    toast_title: "Stay in Orbit!",
+    toast_desc: "Subscribe to patch notes & game updates.",
+    toast_btn: "Subscribe",
 
     footer_desc: "Survive the swarm, master kinetic asteroid cover, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.",
     footer_col_nav: "Navigation",
@@ -94,7 +89,9 @@ const translations = {
     footer_github: "GitHub Organization",
     footer_imprint: "Imprint (Impressum)",
     footer_privacy: "Privacy Policy (Datenschutz)",
-    footer_rights: "All rights reserved."
+    footer_rights: "All rights reserved.",
+    footer_developed_by: "DEVELOPED BY",
+    footer_feed: "Info Feed (RSS)"
   },
 
   de: {
@@ -102,7 +99,7 @@ const translations = {
     meta_desc: "Überlebe Bullet-Hell-Salven im Schutz splitternder Physik-Asteroiden. Astrofray ist ein rasanter 2D Neon-Industrial Weltraum-Roguelite-Auto-Shooter von Ezrok Studios. Weiche aus, fusioniere Waffen und bezwinge Dreadnoughts.",
     nav_features: "Features",
     nav_ships: "Schiffe",
-    nav_presskit: "Presse-Kit",
+    nav_updates: "Updates",
     nav_cta: "Zur Preview",
 
     hero_status: "Closed Preview 2 im Anflug",
@@ -156,22 +153,17 @@ const translations = {
     ship3_archetype: "Gepanzerte Waffenplattform",
     ship3_desc: "Ein schweres 5-Waffen-Kriegsschiff mit verstärkter Hülle, integrierter Schadensreduktion und einem Notfall-Dash – gebaut, um gewaltigen Schwärmen standzuhalten.",
 
-    presskit_title: "Creator- & Presse-Factsheet",
-    presskit_desc: "Offizielle Medien-Assets, Factsheets, freigestellte Schiffsgrafiken und Logos für Content-Creator.",
-    pk_studio: "Entwickler",
-    pk_genre: "Genre",
-    pk_genre_val: "2D-Roguelite-Weltraum-Auto-Shooter",
-    pk_platforms: "Plattformen",
-    pk_platforms_val: "Windows PC • Läuft dank Proton einwandfrei auf Linux & Steam Deck (Native Ports geplant)",
-    pk_release: "Release-Zyklus",
-    pk_release_val: "Closed Preview 2",
-
-    dl_logos_title: "Logo- & Icon-Paket",
-    dl_logos_meta: "PNG (Hohe Auflösung & Alpha Favicon)",
-    dl_ships_title: "Transparente Schiffsgrafiken",
-    dl_ships_meta: "PNG (Abfangjäger, Aufklärer, Schwerer Jäger)",
-    dl_factsheet_title: "Presse-Factsheet & Beschreibungen",
-    dl_factsheet_meta: "Verfügbar mit Preview 2 (In Kürze)",
+    feed_tag: "Devlog & Changelog",
+    feed_title: "Neueste Updates & Patchnotes",
+    feed_desc: "Verfolge aktive Gameplay-Feinabstimmungen, Grafik-Updates und anstehende Playtest-Meilensteine.",
+    feed_subscribe_btn: "Updates abonnieren",
+    feed_t1_title: "Überarbeitete Boss-Explosionen & Zielmarkierungen",
+    feed_t1_desc: "Großes visuelles Kampf-Upgrade mit wuchtigen Boss-Abschüssen, dynamischen Off-Screen-Feindindikatoren und Performance-Optimierungen für dichte Kugelvorhänge.",
+    feed_t2_title: "Optischer Feinschliff & Pause-Menü-Einstellungen",
+    feed_t2_desc: "Überarbeitete Weltraum-Kampfhintergründe und Trefferblitz-Feedback, Grafikeinstellungen direkt im Pause-Menü sowie Bugfixes beim Fortsetzen von Kämpfen.",
+    toast_title: "Auf dem Laufenden bleiben!",
+    toast_desc: "Abonniere Patchnotes & Spiel-Updates.",
+    toast_btn: "Abonnieren",
 
     footer_desc: "Überlebe den Schwarm, nutze Asteroiden als kinetische Deckung und schmiede verheerende Waffensynergien im Weltraum. Entwickelt von Ezrok Studios.",
     footer_col_nav: "Navigation",
@@ -182,7 +174,9 @@ const translations = {
     footer_github: "GitHub-Organisation",
     footer_imprint: "Impressum",
     footer_privacy: "Datenschutzerklärung",
-    footer_rights: "Alle Rechte vorbehalten."
+    footer_rights: "Alle Rechte vorbehalten.",
+    footer_developed_by: "ENTWICKELT VON",
+    footer_feed: "Info-Feed (RSS)"
   }
 };
 
@@ -311,9 +305,12 @@ const legalContent = {
     en: {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
-        <h4>Information according to § 5 ECG / Media Law</h4>
+        <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.0" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+        </div>
+        <h4>Information pursuant to Austrian Media Act (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
-        Owner: Ronald Korze<br>
+        Published by: Ronald Korze (Private Individual / Independent Project)<br>
         Location: A-4050 Traun, Austria</p>
 
         <h4>Contact</h4>
@@ -321,23 +318,26 @@ const legalContent = {
         Web: <a href="https://ezrokstudios.github.io/astrofray" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray</a></p>
 
         <h4>Project Information</h4>
-        <p>Astrofray is an independently developed video game by Ezrok Studios. All trademarks and copyrighted materials belong to their respective owners.</p>
+        <p>Astrofray is an independently developed video game project by Ronald Korze (Ezrok Studios). All game assets, code, and trademarks belong to their respective creator.</p>
       `
     },
     de: {
       title: "Impressum & Offenlegung",
       body: `
-        <h4>Angaben gemäß § 5 E-Commerce-Gesetz (ECG) / Mediengesetz</h4>
+        <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.0" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+        </div>
+        <h4>Angaben gemäß Mediengesetz (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
-        Inhaber: Ronald Korze<br>
-        Standort: A-4050 Traun, Österreich</p>
+        Medieninhaber &amp; Herausgeber: Ronald Korze (Privatperson / Unabhängiges Projekt)<br>
+        Wohnort: A-4050 Traun, Österreich</p>
 
         <h4>Kontakt</h4>
         <p>E-Mail: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a><br>
         Website: <a href="https://ezrokstudios.github.io/astrofray" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray</a></p>
 
         <h4>Hinweis zum Projekt</h4>
-        <p>Astrofray ist ein unabhängig entwickeltes Videospiel von Ezrok Studios. Alle Markenzeichen und Urheberrechte liegen bei ihren jeweiligen Inhabern.</p>
+        <p>Astrofray ist ein unabhängig entwickeltes Videospiel-Projekt von Ronald Korze (Ezrok Studios). Alle Inhalte, Code und Urheberrechte liegen beim Entwickler.</p>
       `
     }
   },
@@ -345,33 +345,159 @@ const legalContent = {
     en: {
       title: "Privacy Policy (Datenschutzerklärung)",
       body: `
-        <h4>1. Static Website Privacy</h4>
-        <p>This marketing website is hosted statically via GitHub Pages. We do not use tracking cookies, advertising analytics, or personal user profiling on this website.</p>
+        <h4>1. Data Controller</h4>
+        <p>The controller responsible for data processing on this website is: Ronald Korze (Ezrok Studios), A-4050 Traun, Austria. Contact: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
 
-        <h4>2. Game Telemetry & Stability Diagnostics</h4>
-        <p>The Astrofray game client processes anonymous technical telemetry data in the background (such as anonymous hardware specifications, operating system, and crash breadcrumbs) to diagnose game crashes and balance performance across hardware configurations.</p>
+        <h4>2. Website Hosting &amp; Server Logs (GitHub Pages)</h4>
+        <p>This website is hosted statically via GitHub Pages (GitHub Inc., USA). When accessing the site, GitHub automatically processes technical server log data (such as IP address, access timestamp, browser type) to ensure system stability and security (Art. 6(1)(f) GDPR). GitHub Inc. is certified under the EU-U.S. Data Privacy Framework (DPF). We do not use tracking cookies, advertising trackers, or user profiling tools.</p>
 
-        <h4>3. Local Save Data</h4>
-        <p>The game stores local progress, options, and achievements locally on your PC (under AppData/LocalLow/Ezrok/Astrofray). No personal data is transmitted.</p>
+        <h4>3. Local Game Saves &amp; Diagnostic Logs</h4>
+        <p>The Astrofray game client stores save files, settings, and diagnostic crash logs <strong>strictly locally on your PC</strong> (under <code>AppData/LocalLow/Ezrok/Astrofray</code>). There is <strong>no automated transmission</strong> of telemetry, crash dumps, or gameplay data to Ezrok Studios or third-party servers.</p>
 
-        <h4>4. Contact for Privacy Inquiries</h4>
-        <p>For any data protection inquiries, please contact: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a></p>
+        <h4>4. Contact via Email</h4>
+        <p>If you contact us via email, your provided contact details are used exclusively to process your inquiry and are deleted once the matter is resolved.</p>
+
+        <h4>5. Your Privacy Rights</h4>
+        <p>Under the GDPR, you have the right to request access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and objection (Art. 21).</p>
+        <p>You also have the right to lodge a complaint with the Austrian data protection authority:<br>
+        <strong>Österreichische Datenschutzbehörde (DSB)</strong>, Barichgasse 40–42, 1030 Vienna, Austria, Web: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>.</p>
       `
     },
     de: {
       title: "Datenschutzerklärung",
       body: `
-        <h4>1. Datenschutz dieser Website</h4>
-        <p>Diese Website wird statisch über GitHub Pages gehostet. Es werden keine Tracking-Cookies, Werbe-Tracker oder Profiling-Dienste von Drittanbietern auf dieser Website eingesetzt.</p>
+        <h4>1. Verantwortlicher</h4>
+        <p>Verantwortlicher für die Datenverarbeitung ist: Ronald Korze (Ezrok Studios), A-4050 Traun, Österreich. Kontakt: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
 
-        <h4>2. Spiel-Telemetrie & Stabilitätsdiagnose</h4>
-        <p>Das Spiel Astrofray verarbeitet im Hintergrund bestimmte technische Telemetriedaten (wie anonymisierte Hardware-Spezifikationen, Betriebssystemversion und Absturzberichte), um Fehler zu beheben und die Stabilität zu sichern.</p>
+        <h4>2. Webhosting &amp; Server-Logs (GitHub Pages)</h4>
+        <p>Diese Website wird statisch über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf erfasst GitHub technisch notwendige Server-Logdaten (z. B. IP-Adresse, Zugriffszeitpunkt, Browsertyp), um Stabilität und Sicherheit des Hostings zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). GitHub Inc. ist nach dem EU-U.S. Data Privacy Framework (DPF) zertifiziert. Auf dieser Website werden keine Tracking-Cookies, Analysedienste oder Werbe-Tracker eingesetzt.</p>
 
-        <h4>3. Lokale Speicherdaten</h4>
-        <p>Das Spiel speichert Fortschritte, Optionen und Errungenschaften ausschließlich lokal auf deinem Computer (unter AppData/LocalLow/Ezrok/Astrofray). Es werden keine persönlichen Daten übermittelt.</p>
+        <h4>3. Spielstände &amp; Lokale Fehlerprotokolle</h4>
+        <p>Das Spiel Astrofray speichert Spielstände, Einstellungen und Absturzberichte <strong>ausschließlich lokal auf deinem Computer</strong> (unter <code>AppData/LocalLow/Ezrok/Astrofray</code>). Es findet <strong>keine automatisierte Übertragung</strong> von Absturzdaten oder Telemetriedaten an Ezrok Studios oder Server Dritter statt.</p>
 
-        <h4>4. Anfragen zum Datenschutz</h4>
-        <p>Bei Fragen zum Datenschutz wende dich bitte an: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a></p>
+        <h4>4. Kontaktaufnahme per E-Mail</h4>
+        <p>Wenn du uns per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage verwendet und nach Erledigung gelöscht, sofern keine gesetzlichen Aufbewahrungsgründe vorliegen.</p>
+
+        <h4>5. Deine Betroffenenrechte</h4>
+        <p>Dir stehen gemäß DSGVO die Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) zu.</p>
+        <p>Zudem hast du das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde:<br>
+        <strong>Österreichische Datenschutzbehörde (DSB)</strong>, Barichgasse 40–42, 1030 Wien, Web: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>.</p>
+      `
+    }
+  },
+  subscribe: {
+    en: {
+      title: "Subscribe to Devlog & Updates",
+      body: `
+        <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.9rem;">
+          Stay notified on upcoming playtests, patch notes, and balance overhauls through your preferred channel. Zero trackers, zero algorithms.
+        </p>
+
+        <!-- Channel 1: RSS / Atom Feed -->
+        <div class="subscribe-channel-card">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">📡</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">Direct RSS / Atom Feed</div>
+              <div class="sub-channel-desc">
+                Subscribe via any modern RSS reader (Thunderbird, NetNewsWire, Feedly, Feedbro). Direct developer announcements delivered without tracking cookies or spam.
+              </div>
+              <div class="sub-copy-wrap">
+                <input type="text" class="sub-feed-input" id="feedUrlInput" value="https://ezrokstudios.github.io/astrofray/feed.xml" readonly>
+                <button type="button" class="btn btn-outline sub-copy-btn" id="copyFeedBtn" onclick="copyFeedUrl()">Copy Feed URL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 2: Discord Announcement Ping -->
+        <div class="subscribe-channel-card">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">💬</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">Discord Playtest Role</div>
+              <div class="sub-channel-desc">
+                Join our official Discord community to receive instant notifications when Closed Preview 2 build keys become available.
+              </div>
+              <div style="margin-top: 10px;">
+                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">Join Server (Soon)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 3: itch.io Devlog Follow -->
+        <div class="subscribe-channel-card" style="margin-bottom: 0;">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">🎮</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">itch.io Devlog Follow</div>
+              <div class="sub-channel-desc">
+                Follow Astrofray on itch.io to receive devlog posts directly in your itch dashboard feed.
+              </div>
+              <div style="margin-top: 10px;">
+                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">itch.io Storefront (Soon)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    de: {
+      title: "Updates & Devlog abonnieren",
+      body: `
+        <p style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.9rem;">
+          Bleibe über anstehende Playtests, Patchnotes und Balancing-Updates auf deinem bevorzugten Kanal informiert. Keine Tracker, keine Werbealgorithmen.
+        </p>
+
+        <!-- Channel 1: RSS / Atom Feed -->
+        <div class="subscribe-channel-card">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">📡</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">Direkter RSS / Atom Feed</div>
+              <div class="sub-channel-desc">
+                Abonniere über jeden modernen Feed-Reader (Thunderbird, NetNewsWire, Feedly, Feedbro). Direkte Entwickler-Updates ohne Tracking-Cookies oder Werbemails.
+              </div>
+              <div class="sub-copy-wrap">
+                <input type="text" class="sub-feed-input" id="feedUrlInput" value="https://ezrokstudios.github.io/astrofray/feed.xml" readonly>
+                <button type="button" class="btn btn-outline sub-copy-btn" id="copyFeedBtn" onclick="copyFeedUrl()">Feed-URL kopieren</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 2: Discord Announcement Ping -->
+        <div class="subscribe-channel-card">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">💬</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">Discord Playtest-Rolle</div>
+              <div class="sub-channel-desc">
+                Tritt unserer offiziellen Discord-Community bei, um sofort benachrichtigt zu werden, sobald Zugangsschlüssel für die Closed Preview 2 verfügbar sind.
+              </div>
+              <div style="margin-top: 10px;">
+                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">Server beitreten (In Kürze)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channel 3: itch.io Devlog Follow -->
+        <div class="subscribe-channel-card" style="margin-bottom: 0;">
+          <div class="sub-channel-header">
+            <div class="sub-channel-icon">🎮</div>
+            <div style="flex-grow: 1;">
+              <div class="sub-channel-title">itch.io Entwicklertagebuch folgen</div>
+              <div class="sub-channel-desc">
+                Folge Astrofray auf itch.io, um Devlogs und Patches direkt in deinem itch.io-Dashboard zu sehen.
+              </div>
+              <div style="margin-top: 10px;">
+                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">itch.io Storefront (In Kürze)</button>
+              </div>
+            </div>
+          </div>
+        </div>
       `
     }
   }
@@ -397,12 +523,13 @@ function closeModal() {
 }
 
 function initModals() {
-  document.querySelectorAll('[data-modal]').forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-modal]');
+    if (trigger) {
       e.preventDefault();
       const type = trigger.getAttribute('data-modal');
       openModal(type);
-    });
+    }
   });
 
   const closeBtn = document.getElementById('modal-close-btn');
@@ -418,6 +545,84 @@ function initModals() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
   });
+}
+
+function copyFeedUrl() {
+  const url = "https://ezrokstudios.github.io/astrofray/feed.xml";
+  const btn = document.getElementById('copyFeedBtn');
+  navigator.clipboard.writeText(url).then(() => {
+    if (btn) {
+      const originalText = btn.textContent;
+      btn.textContent = currentLang === 'de' ? 'Kopiert! ✓' : 'Copied! ✓';
+      btn.style.borderColor = 'var(--neon-green)';
+      btn.style.color = 'var(--neon-green)';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.borderColor = '';
+        btn.style.color = '';
+      }, 2000);
+    }
+  }).catch(() => {
+    const input = document.getElementById('feedUrlInput');
+    if (input) {
+      input.select();
+      document.execCommand('copy');
+      if (btn) btn.textContent = currentLang === 'de' ? 'Kopiert! ✓' : 'Copied! ✓';
+    }
+  });
+}
+window.copyFeedUrl = copyFeedUrl;
+
+function initFeedToast() {
+  const toast = document.getElementById('feedToast');
+  if (!toast) return;
+
+  try {
+    if (localStorage.getItem('astrofray_toast_dismissed') === 'true') {
+      return;
+    }
+  } catch (e) {}
+
+  let shown = false;
+  function showToast() {
+    if (shown) return;
+    shown = true;
+    toast.classList.add('visible');
+  }
+
+  function dismissToast() {
+    toast.classList.remove('visible');
+    try {
+      localStorage.setItem('astrofray_toast_dismissed', 'true');
+    } catch (e) {}
+  }
+
+  const dismissBtn = document.getElementById('dismissToastBtn');
+  if (dismissBtn) {
+    dismissBtn.addEventListener('click', dismissToast);
+  }
+
+  const toastSubBtn = toast.querySelector('.feed-toast-btn');
+  if (toastSubBtn) {
+    toastSubBtn.addEventListener('click', dismissToast);
+  }
+
+  let scrollTriggered = false;
+  const onScroll = () => {
+    if (window.scrollY > 350) {
+      showToast();
+      window.removeEventListener('scroll', onScroll);
+      scrollTriggered = true;
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  setTimeout(() => {
+    if (!scrollTriggered) {
+      showToast();
+      window.removeEventListener('scroll', onScroll);
+    }
+  }, 7000);
 }
 
 // ==========================================
@@ -617,7 +822,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png';
+    img.src = 'assets/game-logo-mask.png?v=0.4.0';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
@@ -665,6 +870,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize interactive modals
   initModals();
+
+  // Initialize non-intrusive subscription HUD toast
+  initFeedToast();
 
   // Initialize real-time in-game WebGL shader logo
   initHeroLogoShader();
