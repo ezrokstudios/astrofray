@@ -1,7 +1,7 @@
 /**
  * ASTROFRAY LANDING PAGE - ENGINE SCRIPT
  * Ezrok Studios (c) 2026
- * Features: Bilingual i18n (EN/DE), Coming Soon Modal, Legal Modals
+ * Features: Bilingual i18n (EN/DE), Preview & Legal Modals
  * Unified with in-game terminology (CommonStrings_en / CommonStrings_de)
  */
 
@@ -421,7 +421,7 @@ const legalContent = {
             <div style="flex-grow: 1;">
               <div class="sub-channel-title">Discord Playtest Role</div>
               <div class="sub-channel-desc">
-                Join our official Discord community to receive instant notifications when Closed Preview build keys become available.
+                Join our official Discord community to grab your Closed Preview password and receive instant notifications for new patches and builds.
               </div>
               <div style="margin-top: 10px;">
                 <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Join Discord Server</a>
@@ -478,7 +478,7 @@ const legalContent = {
             <div style="flex-grow: 1;">
               <div class="sub-channel-title">Discord Playtest-Rolle</div>
               <div class="sub-channel-desc">
-                Tritt unserer offiziellen Discord-Community bei, um sofort benachrichtigt zu werden, sobald Zugangsschlüssel für die Closed Preview verfügbar sind.
+                Tritt unserer offiziellen Discord-Community bei, um dein Passwort für die Closed Preview zu erhalten und direkt über neue Patches und Builds informiert zu werden.
               </div>
               <div style="margin-top: 10px;">
                 <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Discord-Server beitreten</a>
