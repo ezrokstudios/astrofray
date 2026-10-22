@@ -5,7 +5,7 @@
     <link>https://ezrokstudios.github.io/astrofray/</link>
     <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 14:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 08:00:00 +0200</lastBuildDate>
     <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
@@ -13,7 +13,27 @@
       <link>https://ezrokstudios.github.io/astrofray/</link>
     </image>
 
-    <!-- Entry 1: Version 0.3.2 -->
+    <!-- Version 0.4.0 -->
+    <item>
+      <title>Version 0.4.0 Live: Tactical Dashing, Physics Asteroids, Scrap Economy &amp; New Bosses</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.4.0</guid>
+      <pubDate>Thu, 22 Oct 2026 08:00:00 +0200</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.4.0 is now live for the Closed Preview with massive new mechanics and architectural overhauls:</p>
+        <p><strong>⚠️ Progress Reset Note:</strong> Due to major progression re-architecting, save data from v0.3 versions has been reset.</p>
+        <ul>
+          <li><strong>Tactical Thruster Dash:</strong> Slip through dense bullet curtains and evade swarms with a split-second evasive boost.</li>
+          <li><strong>Dynamic Physics Asteroids:</strong> Utilize drifting asteroids as kinetic cover against incoming fire, or fracture them into hazards.</li>
+          <li><strong>Scrap Economy &amp; Armory Purchasing:</strong> Collect salvage scrap from fallen hostiles to purchase upgrades and modules.</li>
+          <li><strong>New Enemies &amp; Dreadnought Bosses:</strong> Encounter brand-new hostile ship variants and intense multi-phase boss battles.</li>
+          <li><strong>Audiovisual Polish &amp; New Music:</strong> Fresh high-energy combat tracks, improved neon weapon VFX, and punchy impact feedback.</li>
+          <li><strong>Rebalancing &amp; Engine:</strong> Full combat rebalancing, frame pacing optimizations for heavy bullet counts, and stability crash fixes.</li>
+        </ul>
+      ]]></description>
+    </item>
+
+    <!-- Version 0.3.2 -->
     <item>
       <title>Version 0.3.2 Live: Overhauled Boss Explosions &amp; Target Tracking</title>
       <link>https://ezrokstudios.github.io/astrofray/#updates</link>
@@ -29,7 +49,7 @@
       ]]></description>
     </item>
 
-    <!-- Entry 2: Version 0.3.1 -->
+    <!-- Version 0.3.1 -->
     <item>
       <title>Version 0.3.1 Live: Combat Polish &amp; Mid-Battle Settings</title>
       <link>https://ezrokstudios.github.io/astrofray/#updates</link>

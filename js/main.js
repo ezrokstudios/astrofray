@@ -17,12 +17,12 @@ const translations = {
     nav_updates: "Updates",
     nav_cta: "Join Preview",
 
-    hero_status: "Closed Preview 2 Inbound",
+    hero_status: "Closed Preview Live",
     hero_slogan: "Survive the Swarm.<br><span class=\"neon-text-cyan\">Use the Debris.</span><br>Merge Your Arsenal.",
     hero_subtitle: "A fast-paced neon-industrial 2D space arena roguelite auto-shooter. Weave through bullet-hell curtains behind fracturing physics asteroids, execute split-second thruster dashes, and dismantle multi-phase dreadnought bosses.",
-    hero_cta_discord: "Get Preview Password (Discord)",
-    hero_cta_itch: "Closed Preview on itch.io (Soon)",
-    hero_cta_github: "View on GitHub",
+    hero_cta_itch: "Get Preview on itch.io",
+    hero_cta_discord: "Get Password on Discord",
+    hero_password_note: "<span class=\"neon-text-orange\">🔒 Password Required:</span> The itch.io preview is password-protected. Join our <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> to get instant access.",
 
     usp_tag: "Tactical Combat Depth",
     usp_title: "High-Speed Evasion & Tactical Survival",
@@ -72,10 +72,10 @@ const translations = {
     feed_title: "Latest Updates & Patch Notes",
     feed_desc: "Track active gameplay calibrations, visual overhauls, and upcoming playtest milestones.",
     feed_subscribe_btn: "Subscribe to Updates",
-    feed_t1_title: "Overhauled Boss Explosions & Target Tracking",
-    feed_t1_desc: "Major combat visual overhaul making boss takedowns significantly punchier, plus dynamic off-screen enemy indicators and frame-rate optimizations for dense bullet curtains.",
-    feed_t2_title: "Combat Visual Polish & In-Battle Pause Settings",
-    feed_t2_desc: "Revamped space combat backdrops and impact flash feedback, mid-combat settings directly in the pause menu, and edge-case combat resume bugfixes.",
+    feed_t1_title: "Major 0.4.0 Overhaul: Dashing, Asteroids, Scrap Economy & New Bosses",
+    feed_t1_desc: "Tactical thruster dashing, dynamic physics asteroids, scrap-based armory purchasing, fresh enemies and bosses, new music, and full combat rebalancing. (Note: Progress reset for v0.3 testers).",
+    feed_t2_title: "Overhauled Boss Explosions & Target Tracking",
+    feed_t2_desc: "Major combat visual overhaul making boss takedowns significantly punchier, plus dynamic off-screen enemy indicators and frame-rate optimizations for dense bullet curtains.",
     toast_title: "Stay in Orbit!",
     toast_desc: "Subscribe to patch notes & game updates.",
     toast_btn: "Subscribe",
@@ -84,9 +84,8 @@ const translations = {
     footer_col_nav: "Navigation",
     footer_col_community: "Community & Channels",
     footer_col_legal: "Legal",
-    footer_discord: "Discord Community (Soon)",
-    footer_itch: "itch.io Storefront (Soon)",
-    footer_github: "GitHub Organization",
+    footer_discord: "Discord Community",
+    footer_itch: "itch.io Preview (Password on Discord)",
     footer_imprint: "Imprint (Impressum)",
     footer_privacy: "Privacy Policy (Datenschutz)",
     footer_rights: "All rights reserved.",
@@ -102,12 +101,12 @@ const translations = {
     nav_updates: "Updates",
     nav_cta: "Zur Preview",
 
-    hero_status: "Closed Preview 2 im Anflug",
+    hero_status: "Closed Preview Live",
     hero_slogan: "Überlebe den Schwarm.<br><span class=\"neon-text-cyan\">Nutze die Trümmer.</span><br>Fusioniere dein Arsenal.",
     hero_subtitle: "Ein rasanter Neon-Industrial 2D-Weltraum-Roguelite-Auto-Shooter. Gleite im Schutz splitternder Physik-Asteroiden durch dichte Bullet-Hell-Schleier, nutze den Triebwerks-Dash für lebensrettende Unverwundbarkeits-Frames und zerlege mehrphasige Dreadnought-Bosse.",
-    hero_cta_discord: "Preview-Passwort holen (Discord)",
-    hero_cta_itch: "Closed Preview auf itch.io (In Kürze)",
-    hero_cta_github: "Auf GitHub ansehen",
+    hero_cta_itch: "Preview auf itch.io holen",
+    hero_cta_discord: "Passwort auf Discord holen",
+    hero_password_note: "<span class=\"neon-text-orange\">🔒 Passwort erforderlich:</span> Die itch.io-Preview ist passwortgeschützt. Tritt unserem <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> bei, um sofortigen Zugriff zu erhalten.",
 
     usp_tag: "Taktischer Tiefgang",
     usp_title: "Rasantes Dogfighting & Taktisches Überleben",
@@ -157,10 +156,10 @@ const translations = {
     feed_title: "Neueste Updates & Patchnotes",
     feed_desc: "Verfolge aktive Gameplay-Feinabstimmungen, Grafik-Updates und anstehende Playtest-Meilensteine.",
     feed_subscribe_btn: "Updates abonnieren",
-    feed_t1_title: "Überarbeitete Boss-Explosionen & Zielmarkierungen",
-    feed_t1_desc: "Großes visuelles Kampf-Upgrade mit wuchtigen Boss-Abschüssen, dynamischen Off-Screen-Feindindikatoren und Performance-Optimierungen für dichte Kugelvorhänge.",
-    feed_t2_title: "Optischer Feinschliff & Pause-Menü-Einstellungen",
-    feed_t2_desc: "Überarbeitete Weltraum-Kampfhintergründe und Trefferblitz-Feedback, Grafikeinstellungen direkt im Pause-Menü sowie Bugfixes beim Fortsetzen von Kämpfen.",
+    feed_t1_title: "Großes 0.4.0 Update: Dashing, Asteroiden, Schrott-Wirtschaft & Neue Bosse",
+    feed_t1_desc: "Taktischer Ausweich-Dash, zerberstende Asteroiden als Deckung, neues Schrott-Kaufsystem, neue Feinde und Bosse, neuer Soundtrack und Effekte sowie Performance-Feinschliff. (Hinweis: Fortschritt für v0.3-Tester zurückgesetzt).",
+    feed_t2_title: "Überarbeitete Boss-Explosionen & Zielmarkierungen",
+    feed_t2_desc: "Großes visuelles Kampf-Upgrade mit wuchtigen Boss-Abschüssen, dynamischen Off-Screen-Feindindikatoren und Performance-Optimierungen für dichte Kugelvorhänge.",
     toast_title: "Auf dem Laufenden bleiben!",
     toast_desc: "Abonniere Patchnotes & Spiel-Updates.",
     toast_btn: "Abonnieren",
@@ -169,9 +168,8 @@ const translations = {
     footer_col_nav: "Navigation",
     footer_col_community: "Community & Kanäle",
     footer_col_legal: "Rechtliches",
-    footer_discord: "Discord-Community (In Kürze)",
-    footer_itch: "itch.io-Storefront (In Kürze)",
-    footer_github: "GitHub-Organisation",
+    footer_discord: "Discord-Community",
+    footer_itch: "itch.io-Preview (Passwort auf Discord)",
     footer_imprint: "Impressum",
     footer_privacy: "Datenschutzerklärung",
     footer_rights: "Alle Rechte vorbehalten.",
@@ -257,46 +255,52 @@ function setLanguage(lang, persist = false) {
 const legalContent = {
   preview: {
     en: {
-      title: "Closed Preview 2 — Coming Soon",
+      title: "Closed Preview Available",
       body: `
-        <div style="display: inline-block; background: rgba(255, 106, 0, 0.12); border: 1px solid var(--neon-orange); color: var(--neon-orange); padding: 4px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 16px;">
-          DEPLOYMENT IN PREPARATION
+        <div style="display: inline-block; background: rgba(0, 240, 255, 0.12); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 4px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 16px;">
+          AVAILABLE NOW (PASSWORD PROTECTED)
         </div>
         <p style="margin-bottom: 16px;">
-          Access to <strong>Closed Preview 2</strong> on itch.io and invitations to our official Discord playtesting server will launch soon!
+          The <strong>Closed Preview</strong> build of Astrofray is now live on itch.io!
         </p>
         <p style="margin-bottom: 16px;">
-          We are currently polishing the latest build, calibrating boss encounters, and setting up community feedback channels. Check back here soon or keep an eye on our GitHub updates!
+          To unlock the build download on itch.io, you will need the access password. Fetch your password immediately by joining our official <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord Community</a>.
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Platform Support:</strong> Windows PC standalone. Tested and runs smoothly on Linux desktop and Steam Deck via Steam Proton.
         </div>
-        <div class="modal-actions">
-          <button type="button" class="btn btn-primary" onclick="closeModal()" style="padding: 10px 24px; font-size: 0.85rem;">
-            Got it
-          </button>
+        <div class="modal-actions" style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+          <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+            Get Preview on itch.io
+          </a>
+          <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
+            Get Password on Discord
+          </a>
         </div>
       `
     },
     de: {
-      title: "Closed Preview 2 — Demnächst verfügbar",
+      title: "Closed Preview verfügbar",
       body: `
-        <div style="display: inline-block; background: rgba(255, 106, 0, 0.12); border: 1px solid var(--neon-orange); color: var(--neon-orange); padding: 4px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 16px;">
-          BEREITSTELLUNG IN VORBEREITUNG
+        <div style="display: inline-block; background: rgba(0, 240, 255, 0.12); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 4px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 16px;">
+          JETZT VERFÜGBAR (PASSWORTGESCHÜTZT)
         </div>
         <p style="margin-bottom: 16px;">
-          Der Zugang zur <strong>Closed Preview 2</strong> auf itch.io sowie Einladungen zu unserem offiziellen Discord-Playtesting-Server starten in Kürze!
+          Der <strong>Closed Preview</strong> Build von Astrofray ist ab sofort auf itch.io verfügbar!
         </p>
         <p style="margin-bottom: 16px;">
-          Wir feilen aktuell am neuesten Build, verfeinern die Boss-Begegnungen und bereiten die Community-Kanäle vor. Schau bald wieder vorbei oder verfolge unsere Updates auf GitHub!
+          Um den Download auf itch.io freizuschalten, benötigst du das Zugangspasswort. Du erhältst dein Passwort direkt nach dem Beitritt in unserer offiziellen <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord-Community</a>.
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Plattform-Unterstützung:</strong> Windows PC Standalone. Getestet und läuft dank Steam Proton einwandfrei auf Linux und dem Steam Deck.
         </div>
-        <div class="modal-actions">
-          <button type="button" class="btn btn-primary" onclick="closeModal()" style="padding: 10px 24px; font-size: 0.85rem;">
-            Verstanden
-          </button>
+        <div class="modal-actions" style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+          <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+            Preview auf itch.io holen
+          </a>
+          <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
+            Passwort auf Discord holen
+          </a>
         </div>
       `
     }
@@ -417,10 +421,10 @@ const legalContent = {
             <div style="flex-grow: 1;">
               <div class="sub-channel-title">Discord Playtest Role</div>
               <div class="sub-channel-desc">
-                Join our official Discord community to receive instant notifications when Closed Preview 2 build keys become available.
+                Join our official Discord community to receive instant notifications when Closed Preview build keys become available.
               </div>
               <div style="margin-top: 10px;">
-                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">Join Server (Soon)</button>
+                <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Join Discord Server</a>
               </div>
             </div>
           </div>
@@ -436,7 +440,7 @@ const legalContent = {
                 Follow Astrofray on itch.io to receive devlog posts directly in your itch dashboard feed.
               </div>
               <div style="margin-top: 10px;">
-                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">itch.io Storefront (Soon)</button>
+                <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Visit itch.io Page</a>
               </div>
             </div>
           </div>
@@ -474,10 +478,10 @@ const legalContent = {
             <div style="flex-grow: 1;">
               <div class="sub-channel-title">Discord Playtest-Rolle</div>
               <div class="sub-channel-desc">
-                Tritt unserer offiziellen Discord-Community bei, um sofort benachrichtigt zu werden, sobald Zugangsschlüssel für die Closed Preview 2 verfügbar sind.
+                Tritt unserer offiziellen Discord-Community bei, um sofort benachrichtigt zu werden, sobald Zugangsschlüssel für die Closed Preview verfügbar sind.
               </div>
               <div style="margin-top: 10px;">
-                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">Server beitreten (In Kürze)</button>
+                <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Discord-Server beitreten</a>
               </div>
             </div>
           </div>
@@ -493,7 +497,7 @@ const legalContent = {
                 Folge Astrofray auf itch.io, um Devlogs und Patches direkt in deinem itch.io-Dashboard zu sehen.
               </div>
               <div style="margin-top: 10px;">
-                <button type="button" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;" data-modal="preview">itch.io Storefront (In Kürze)</button>
+                <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">itch.io-Seite besuchen</a>
               </div>
             </div>
           </div>
