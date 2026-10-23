@@ -5,13 +5,30 @@
     <link>https://ezrokstudios.github.io/astrofray/</link>
     <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Oct 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 14:00:00 +0200</lastBuildDate>
     <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
       <title>Astrofray</title>
       <link>https://ezrokstudios.github.io/astrofray/</link>
     </image>
+
+    <!-- Version 0.4.1 -->
+    <item>
+      <title>Version 0.4.1 Live: Performance Optimizations, Multi-Monitor Support &amp; Onboarding Polish</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.4.1</guid>
+      <pubDate>Fri, 23 Oct 2026 14:00:00 +0200</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.4.1 has landed with performance enhancements, multi-monitor display flexibility, and onboarding polish:</p>
+        <ul>
+          <li><strong>Performance &amp; Frame Pacing:</strong> Substantially reduced garbage collection overhead during high-density combat by replacing coroutines with float timers, pooling shader properties, and optimizing UI Toolkit updates.</li>
+          <li><strong>Multi-Monitor Display Selector:</strong> Added a dedicated monitor switcher in Settings allowing seamless display targeting across multi-monitor PC setups.</li>
+          <li><strong>In-Combat Onboarding Overlay:</strong> Sector 1 now introduces an adaptive controls banner automatically tuned for keyboard and gamepad users to get new pilots up to speed fast.</li>
+          <li><strong>Save Compatibility:</strong> Fully compatible with v0.4.0 savegame progress.</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <!-- Version 0.4.0 -->
     <item>
