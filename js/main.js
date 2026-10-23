@@ -19,14 +19,15 @@ const translations = {
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Survive the Swarm.<br><span class=\"neon-text-cyan\">Use the Debris.</span><br>Merge Your Arsenal.",
-    hero_subtitle: "A fast-paced neon-industrial 2D space arena roguelite auto-shooter. Weave through bullet-hell curtains behind fracturing physics asteroids, execute split-second thruster dashes, and dismantle multi-phase dreadnought bosses.",
+    hero_subtitle: "A fast-paced neon-industrial 2D space arena roguelite auto-shooter. Weave through bullet-hell curtains behind fracturing physics asteroids, execute split-second thruster dashes, and dismantle multi-phase dreadnought bosses across 10-wave runs.",
     hero_cta_itch: "Get Preview on itch.io",
     hero_cta_discord: "Get Password on Discord",
     hero_password_note: "<span class=\"neon-text-orange\">🔒 Password Required:</span> The itch.io preview is password-protected. Join our <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> to get instant access.",
+    hero_support_note: "🎮 Full Gamepad Support (Xbox, PlayStation, Switch) & Keyboard",
 
     usp_tag: "Tactical Combat Depth",
     usp_title: "High-Speed Evasion & Tactical Survival",
-    usp_desc: "Engineered around aggressive positioning, deterministic physics, and high-risk salvage economics.",
+    usp_desc: "Engineered around aggressive positioning, deterministic physics, and high-risk salvage economics. Direct 360° thruster evasion with full controller and keyboard support.",
 
     feature_asteroid_title: "Physics Asteroids as Dynamic Cover",
     feature_asteroid_text: "Drifting asteroid clusters feature authentic 2D rigid-body kinematics. Maneuver behind dense rocks to absorb relentless bullet-hell salvos. Under heavy ballistic pressure, large asteroids fracture into smaller shards—or get punched straight through by penetrating plasma rounds.",
@@ -103,14 +104,15 @@ const translations = {
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Überlebe den Schwarm.<br><span class=\"neon-text-cyan\">Nutze die Trümmer.</span><br>Fusioniere dein Arsenal.",
-    hero_subtitle: "Ein rasanter Neon-Industrial 2D-Weltraum-Roguelite-Auto-Shooter. Gleite im Schutz splitternder Physik-Asteroiden durch dichte Bullet-Hell-Schleier, nutze den Triebwerks-Dash für lebensrettende Unverwundbarkeits-Frames und zerlege mehrphasige Dreadnought-Bosse.",
+    hero_subtitle: "Ein rasanter Neon-Industrial 2D-Weltraum-Roguelite-Auto-Shooter. Gleite im Schutz splitternder Physik-Asteroiden durch dichte Bullet-Hell-Schleier, nutze den Triebwerks-Dash für lebensrettende Unverwundbarkeits-Frames und zerlege mehrphasige Dreadnought-Bosse in 10-Wellen-Runs.",
     hero_cta_itch: "Preview auf itch.io holen",
     hero_cta_discord: "Passwort auf Discord holen",
     hero_password_note: "<span class=\"neon-text-orange\">🔒 Passwort erforderlich:</span> Die itch.io-Preview ist passwortgeschützt. Tritt unserem <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> bei, um sofortigen Zugriff zu erhalten.",
+    hero_support_note: "🎮 Volle Gamepad-Unterstützung (Xbox, PlayStation, Switch) & Tastatur",
 
     usp_tag: "Taktischer Tiefgang",
     usp_title: "Rasantes Dogfighting & Taktisches Überleben",
-    usp_desc: "Entwickelt für aggressive Positionierung, deterministische Physik und die Verlockung riskanter Bergungsmanöver.",
+    usp_desc: "Entwickelt für aggressive Positionierung, deterministische Physik und risikoreiche Bergungsmanöver. Direkte 360°-Schubsteuerung mit voller Controller- und Tastaturunterstützung.",
 
     feature_asteroid_title: "Physik-Asteroiden als kinetische Deckung",
     feature_asteroid_text: "Driftende Asteroidenfelder verfügen über echte 2D-Starrkörper-Physik. Nutze schwere Gesteinsbrocken als Deckung, um unerbittliche Bullet-Hell-Salven abzufangen. Bei schwerem Beschuss zersplittern große Asteroiden in kleinere Trümmer – oder werden von Plasma direkt durchschlagen.",
@@ -310,7 +312,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.0" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to Austrian Media Act (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -329,7 +331,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.0" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß Mediengesetz (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -826,7 +828,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.0';
+    img.src = 'assets/game-logo-mask.png?v=0.4.1';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
