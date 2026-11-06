@@ -121,16 +121,16 @@ const translations = {
     feature_asteroid_spec3: "Plasma-Durchschlag",
 
     feature_boss_title: "Mehrphasige Dreadnought-Bosse",
-    feature_boss_text: "Stelle dich kolossalen Kommandoschiffen und Alien-Horrors wie der Brood Queen im Verlauf der 10 Kampagnen-Wellen. Bosse lassen sich nicht einfach niederbrennen: Zerstöre zuerst die äußeren Geschütztürme, bevor der freiliegende Reaktorkern verwundbar wird.",
+    feature_boss_text: "Stelle dich kolossalen Kommandoschiffen und außerirdischen Schrecken wie der Brood Queen im Verlauf der 10 Kampagnen-Wellen. Bosse lassen sich nicht einfach niederbrennen: Zerstöre zuerst die äußeren Geschütztürme, bevor der freiliegende Reaktorkern verwundbar wird.",
     feature_boss_spec1: "Hierarchische Hitboxen",
     feature_boss_spec2: "Turm-Zerstörung",
     feature_boss_spec3: "Kern-Überhitzung",
 
-    feature_scrap_title: "Die 33% Schrott-Steuer (Gier vs. Sicherheit)",
-    feature_scrap_text: "Besiegte Feinde detonieren mitten im Kreuzfeuer zu leuchtendem Schrott. Sammle Schrott aktiv im Gefecht für den vollen 100%-Wert – oder gehe auf Nummer sicher und warte auf den Auto-Sauger am Wellenende, der einen Abschlag von 33% einbehält (bringt nur 2/3 Wert).",
+    feature_scrap_title: "Die 33%-Schrott-Steuer (Gier vs. Sicherheit)",
+    feature_scrap_text: "Besiegte Feinde detonieren mitten im Kreuzfeuer zu leuchtendem Schrott. Sammle Schrott aktiv im Gefecht für den vollen Wert (100%) – oder gehe auf Nummer sicher und warte auf das automatische Einsammeln am Wellenende, das einen Abzug von 33% bedeutet (bringt nur zwei Drittel des Ertrags).",
     feature_scrap_spec1: "Echtzeit-Bergung (100%)",
     feature_scrap_spec2: "High-Risk-Belohnung",
-    feature_scrap_spec3: "Auto-Sauger (2/3 Wert)",
+    feature_scrap_spec3: "Automatisches Einsammeln (2/3 Ertrag)",
 
     feature_arsenal_title: "Modulares Arsenal & Waffenfusion",
     feature_arsenal_text: "Bordwaffen feuern vollautomatisch mit prädiktiver Zielerfassung. Kaufe und fusioniere gleiche Waffen im Upgrade-Shop (MK1 → MK2 → MK3) aus drei eigenständigen Waffenfamilien: durchschlagskräftige Maschinengewehre, vielseitige Ionenblaster und asteroidenbrechende Plasmakanonen. Sperre wichtige Shop-Karten, um sie über Rerolls hinweg zu sichern.",
@@ -152,7 +152,7 @@ const translations = {
 
     ship3_name: "Schwerer Jäger (Heavy Fighter)",
     ship3_archetype: "Gepanzerte Waffenplattform",
-    ship3_desc: "Ein schweres 5-Waffen-Kriegsschiff mit verstärkter Hülle, integrierter Schadensreduktion und einem Notfall-Dash – gebaut, um gewaltigen Schwärmen standzuhalten.",
+    ship3_desc: "Ein schweres Kriegsschiff mit 5 Waffenplätzen, verstärkter Hülle, integrierter Schadensreduktion und einem Notfall-Dash – gebaut, um gewaltigen Schwärmen standzuhalten.",
 
     feed_tag: "Devlog & Changelog",
     feed_title: "Neueste Updates & Patchnotes",
