@@ -5,13 +5,42 @@
     <link>https://ezrokstudios.github.io/astrofray/</link>
     <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 14:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
       <title>Astrofray</title>
       <link>https://ezrokstudios.github.io/astrofray/</link>
     </image>
+
+    <!-- Version 0.4.2 -->
+    <item>
+      <title>Version 0.4.2 Live: Tactical Signals, Thruster Capacitors &amp; Loadout Freedom</title>
+      <title xml:lang="de">Version 0.4.2 Live: Taktische Signale, Triebwerkskondensatoren &amp; Freie Waffenplätze</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.4.2</guid>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0100</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.4.2 has landed with mid-wave signal caches, faster dash tech, custom weapon hardpoints, and cockpit customization:</p>
+        <ul>
+          <li><strong>Chase the Signal (Derelict Caches &amp; Achievements):</strong> Intercept time-critical <em>Salvage Pods</em> (bonus Scrap) and <em>Emergency Repairs</em> (hull restoration) mid-wave to progress the new Signal Achievement Track.</li>
+          <li><strong>Thruster Capacitor &amp; Custom Hardpoints:</strong> Unlock the new <em>Thruster Capacitor</em> (MK1–MK3) for faster dash cooldowns, and freely swap weapons across ship mount points in the Weapon Loadout screen.</li>
+          <li><strong>Visceral Combat Feel &amp; Balancing:</strong> Dynamic ship banking in turns, punchier hit feedback &amp; explosions, wave-end victory protection, and smoother campaign balancing.</li>
+          <li><strong>Tailored Cockpit &amp; Graphics Suite:</strong> 3-tier HUD scaling (Small, Normal, Large), VSync, Target FPS, Fullscreen, Render Scale options, and the new in-game Main Menu Newsfeed.</li>
+          <li><strong>Save Compatibility:</strong> 100% compatible with v0.4.0 and v0.4.1 savegame progress.</li>
+        </ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <p>Astrofray v0.4.2 ist da – mit zeitkritischen Signal-Kapseln, schnellerem Dash-Cooldown, freier Waffenplatz-Zuweisung und neuen Grafikoptionen:</p>
+        <ul>
+          <li><strong>Jagd nach dem Signal (Bergungskapseln &amp; Erfolge):</strong> Sichere dir zeitkritische <em>Bergungskapseln</em> (Bonus-Schrott) und <em>Notfallreparaturen</em> mitten im Gefecht und schalte neue Signal-Erfolge frei.</li>
+          <li><strong>Triebwerkskondensator &amp; Freie Waffenplätze:</strong> Verkürze deinen Dash-Cooldown mit dem neuen <em>Triebwerkskondensator</em> (MK1–MK3) und weise montierte Waffen im Ausrüstungsmenü frei jedem Waffenplatz zu.</li>
+          <li><strong>Dynamisches Fluggefühl &amp; Balancing:</strong> Dynamische Schiffsneigung in Kurven, wuchtigeres Treffer-Feedback &amp; Explosionen, Schutz beim Wellenende sowie eine rundere Schwierigkeitskurve.</li>
+          <li><strong>Cockpit nach Maß &amp; Grafikoptionen:</strong> 3-stufige HUD-Skalierung (Klein, Normal, Groß), VSync, Ziel-FPS, Vollbild, Render-Skalierung sowie der neue In-Game-Newsfeed im Hauptmenü.</li>
+          <li><strong>Spielstand-Kompatibilität:</strong> Vollständig kompatibel mit deinem Spielstand aus v0.4.0 und v0.4.1.</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <!-- Version 0.4.1 -->
     <item>
