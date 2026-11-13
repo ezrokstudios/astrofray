@@ -312,38 +312,58 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.3" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
-        <h4>Information pursuant to Austrian Media Act (MedienG)</h4>
+        <h4>Information pursuant to § 5 ECG, § 63 GewO &amp; § 25 MedienG (Austria)</h4>
         <p><strong>Ezrok Studios</strong><br>
-        Published by: Ronald Korze (Private Individual / Independent Project)<br>
-        Location: A-4050 Traun, Austria</p>
+        Proprietor &amp; Media Owner: <strong>Ronald Alexander Korze, M.Sc.</strong><br>
+        Legal Form: Sole Proprietorship (unregistered, <em>nicht im Firmenbuch eingetragen</em>)<br>
+        Business Address: Am Vogeltenn 13 Haus 2, Tür 8, A-4050 Traun, Austria</p>
 
         <h4>Contact</h4>
         <p>Email: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a><br>
-        Web: <a href="https://ezrokstudios.github.io/astrofray" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray</a></p>
+        Web: <a href="https://ezrokstudios.github.io/astrofray/" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray/</a><br>
+        Community / Support: <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener">Official Discord Server</a></p>
 
-        <h4>Project Information</h4>
-        <p>Astrofray is an independently developed video game project by Ronald Korze (Ezrok Studios). All game assets, code, and trademarks belong to their respective creator.</p>
+        <h4>Trade &amp; Regulatory Information</h4>
+        <p>Trade License (<em>Gewerbeberechtigung</em>): Services in Automatic Data Processing and Information Technology (<em>Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik</em>, Free Trade)<br>
+        GISA Number: <strong>40362502</strong><br>
+        Supervisory Trade Authority: Bezirkshauptmannschaft Linz-Land<br>
+        Chamber Membership: Austrian Economic Chambers — Upper Austria (WKO Oberösterreich), Division for Management Consulting, Accounting and Information Technology (UBIT)<br>
+        Applicable Trade Regulations: Austrian Trade Act (<em>Gewerbeordnung 1994</em>, accessible at <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener">www.ris.bka.gv.at</a>)<br>
+        VAT Status: Exempt from VAT under the Austrian Small Business Regulation (<em>Kleinunternehmerregelung</em>, § 6(1)(27) UStG)</p>
+
+        <h4>Business Purpose &amp; Editorial Direction (§ 25 MedienG)</h4>
+        <p>Development and publishing of video games and software via digital platforms; presentation and news updates regarding Astrofray and projects by Ezrok Studios. All game assets, source code, and trademarks belong to Ronald Alexander Korze / Ezrok Studios unless credited otherwise.</p>
       `
     },
     de: {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.3" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
-        <h4>Angaben gemäß Mediengesetz (MedienG)</h4>
+        <h4>Angaben gemäß § 5 ECG, § 63 GewO &amp; § 25 MedienG</h4>
         <p><strong>Ezrok Studios</strong><br>
-        Medieninhaber &amp; Herausgeber: Ronald Korze (Privatperson / Unabhängiges Projekt)<br>
-        Wohnort: A-4050 Traun, Österreich</p>
+        Inhaber, Medieninhaber &amp; Herausgeber: <strong>Ronald Alexander Korze, M.Sc.</strong><br>
+        Rechtsform: Einzelunternehmen (nicht im Firmenbuch eingetragen)<br>
+        Unternehmensstandort: Am Vogeltenn 13 Haus 2, Tür 8, A-4050 Traun, Österreich</p>
 
         <h4>Kontakt</h4>
         <p>E-Mail: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a><br>
-        Website: <a href="https://ezrokstudios.github.io/astrofray" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray</a></p>
+        Website: <a href="https://ezrokstudios.github.io/astrofray/" target="_blank" rel="noopener">https://ezrokstudios.github.io/astrofray/</a><br>
+        Community / Support: <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener">Offizieller Discord-Server</a></p>
 
-        <h4>Hinweis zum Projekt</h4>
-        <p>Astrofray ist ein unabhängig entwickeltes Videospiel-Projekt von Ronald Korze (Ezrok Studios). Alle Inhalte, Code und Urheberrechte liegen beim Entwickler.</p>
+        <h4>Gewerbe- &amp; Aufsichtsdaten</h4>
+        <p>Gewerbewortlaut: Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik (freies Gewerbe)<br>
+        GISA-Zahl: <strong>40362502</strong><br>
+        Zuständige Gewerbebehörde: Bezirkshauptmannschaft Linz-Land<br>
+        Kammerzugehörigkeit: Wirtschaftskammer Oberösterreich (WKOÖ), Fachgruppe Unternehmensberatung, Buchhaltung und Informationstechnologie (UBIT)<br>
+        Berufsrechtliche Vorschriften: Gewerbeordnung 1994 (abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener">www.ris.bka.gv.at</a>)<br>
+        Umsatzsteuer: Umsatzsteuerbefreit gemäß Kleinunternehmerregelung (§ 6 Abs. 1 Z 27 UStG)</p>
+
+        <h4>Unternehmensgegenstand &amp; Blattlinie (§ 25 MedienG)</h4>
+        <p>Entwicklung und Veröffentlichung (Publishing) von Computerspielen und Software über digitale Plattformen; Information und Präsentation rund um das Spiel Astrofray sowie Projekte von Ezrok Studios. Alle Inhalte, Code und Urheberrechte liegen bei Ronald Alexander Korze / Ezrok Studios, sofern nicht anders angegeben.</p>
       `
     }
   },
@@ -352,16 +372,16 @@ const legalContent = {
       title: "Privacy Policy (Datenschutzerklärung)",
       body: `
         <h4>1. Data Controller</h4>
-        <p>The controller responsible for data processing on this website is: Ronald Korze (Ezrok Studios), A-4050 Traun, Austria. Contact: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
+        <p>The controller responsible for data processing on this website and in the game Astrofray is: <strong>Ronald Alexander Korze, M.Sc.</strong> (Ezrok Studios), Am Vogeltenn 13 Haus 2, Tür 8, A-4050 Traun, Austria. Contact: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
 
         <h4>2. Website Hosting &amp; Server Logs (GitHub Pages)</h4>
-        <p>This website is hosted statically via GitHub Pages (GitHub Inc., USA). When accessing the site, GitHub automatically processes technical server log data (such as IP address, access timestamp, browser type) to ensure system stability and security (Art. 6(1)(f) GDPR). GitHub Inc. is certified under the EU-U.S. Data Privacy Framework (DPF). We do not use tracking cookies, advertising trackers, or user profiling tools.</p>
+        <p>This website is hosted statically via GitHub Pages (GitHub Inc., USA). When accessing the site, GitHub automatically processes technical server log data (such as IP address, access timestamp, browser type) to ensure system stability and security (Art. 6(1)(f) GDPR). GitHub Inc. is certified under the EU-U.S. Data Privacy Framework (DPF). We do not use tracking cookies, advertising trackers, or user profiling tools. Language preference and toast dismissal state are stored locally in your browser via <code>localStorage</code>.</p>
 
-        <h4>3. Local Game Saves &amp; Diagnostic Logs</h4>
-        <p>The Astrofray game client stores save files, settings, and diagnostic crash logs <strong>strictly locally on your PC</strong> (under <code>AppData/LocalLow/Ezrok/Astrofray</code>). There is <strong>no automated transmission</strong> of telemetry, crash dumps, or gameplay data to Ezrok Studios or third-party servers.</p>
+        <h4>3. Game Client: Local Saves, Logs &amp; In-Game Newsfeed</h4>
+        <p>The Astrofray game client stores save files, settings, and diagnostic crash logs <strong>strictly locally on your PC</strong> (under <code>AppData/LocalLow/Ezrok/Astrofray</code> and local Windows Registry <code>PlayerPrefs</code>). There is <strong>no automated transmission</strong> of telemetry, crash dumps, or gameplay data to Ezrok Studios. When fetching the in-game newsfeed, the client requests the static <code>feed.xml</code> hosted on GitHub Pages (<code>ezrokstudios.github.io</code>), which transmits standard connection metadata (IP address) to GitHub Inc. (Art. 6(1)(f) GDPR). For Unity Engine runtime information, please also refer to the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</p>
 
-        <h4>4. Contact via Email</h4>
-        <p>If you contact us via email, your provided contact details are used exclusively to process your inquiry and are deleted once the matter is resolved.</p>
+        <h4>4. Contact via Email &amp; External Platforms</h4>
+        <p>If you contact us via email, your provided contact details are used exclusively to process your inquiry and are deleted once the matter is resolved, unless statutory retention periods apply. External links (such as itch.io or Discord) are governed by the respective platform's privacy policies.</p>
 
         <h4>5. Your Privacy Rights</h4>
         <p>Under the GDPR, you have the right to request access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and objection (Art. 21).</p>
@@ -373,16 +393,16 @@ const legalContent = {
       title: "Datenschutzerklärung",
       body: `
         <h4>1. Verantwortlicher</h4>
-        <p>Verantwortlicher für die Datenverarbeitung ist: Ronald Korze (Ezrok Studios), A-4050 Traun, Österreich. Kontakt: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
+        <p>Verantwortlicher für die Datenverarbeitung auf dieser Website und im Spiel Astrofray ist: <strong>Ronald Alexander Korze, M.Sc.</strong> (Ezrok Studios), Am Vogeltenn 13 Haus 2, Tür 8, A-4050 Traun, Österreich. Kontakt: <a href="mailto:ezrokstudios@proton.me">ezrokstudios@proton.me</a>.</p>
 
         <h4>2. Webhosting &amp; Server-Logs (GitHub Pages)</h4>
-        <p>Diese Website wird statisch über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf erfasst GitHub technisch notwendige Server-Logdaten (z. B. IP-Adresse, Zugriffszeitpunkt, Browsertyp), um Stabilität und Sicherheit des Hostings zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). GitHub Inc. ist nach dem EU-U.S. Data Privacy Framework (DPF) zertifiziert. Auf dieser Website werden keine Tracking-Cookies, Analysedienste oder Werbe-Tracker eingesetzt.</p>
+        <p>Diese Website wird statisch über GitHub Pages (GitHub Inc., USA) bereitgestellt. Beim Aufruf erfasst GitHub technisch notwendige Server-Logdaten (z. B. IP-Adresse, Zugriffszeitpunkt, Browsertyp), um Stabilität und Sicherheit des Hostings zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO). GitHub Inc. ist nach dem EU-U.S. Data Privacy Framework (DPF) zertifiziert. Auf dieser Website werden keine Tracking-Cookies, Analysedienste oder Werbe-Tracker eingesetzt. Die gewählte Sprache und der Hinweisstatus werden lokal in deinem Browser über <code>localStorage</code> gespeichert.</p>
 
-        <h4>3. Spielstände &amp; Lokale Fehlerprotokolle</h4>
-        <p>Das Spiel Astrofray speichert Spielstände, Einstellungen und Absturzberichte <strong>ausschließlich lokal auf deinem Computer</strong> (unter <code>AppData/LocalLow/Ezrok/Astrofray</code>). Es findet <strong>keine automatisierte Übertragung</strong> von Absturzdaten oder Telemetriedaten an Ezrok Studios oder Server Dritter statt.</p>
+        <h4>3. Spiel-Client: Spielstände, lokale Logs &amp; In-Game-Newsfeed</h4>
+        <p>Das Spiel Astrofray speichert Spielstände, Einstellungen und Absturzberichte <strong>ausschließlich lokal auf deinem Computer</strong> (unter <code>AppData/LocalLow/Ezrok/Astrofray</code> bzw. lokalen <code>PlayerPrefs</code>). Es findet <strong>keine automatisierte Übertragung</strong> von Absturzdaten oder Telemetriedaten an Ezrok Studios statt. Beim Abruf des In-Game-Newsfeeds lädt der Spiel-Client die statische Datei <code>feed.xml</code> von GitHub Pages (<code>ezrokstudios.github.io</code>), wobei technisch bedingt Verbindungsdaten (z. B. IP-Adresse) an GitHub Inc. übermittelt werden (Art. 6 Abs. 1 lit. f DSGVO). Hinweise zur Unity-Laufzeitumgebung findest du zudem in der <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Datenschutzerklärung von Unity</a>.</p>
 
-        <h4>4. Kontaktaufnahme per E-Mail</h4>
-        <p>Wenn du uns per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage verwendet und nach Erledigung gelöscht, sofern keine gesetzlichen Aufbewahrungsgründe vorliegen.</p>
+        <h4>4. Kontaktaufnahme per E-Mail &amp; externe Plattformen</h4>
+        <p>Wenn du uns per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage verwendet und nach Erledigung gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen. Für externe verlinkte Plattformen (z. B. itch.io oder Discord) gelten deren jeweilige Datenschutzerklärungen.</p>
 
         <h4>5. Deine Betroffenenrechte</h4>
         <p>Dir stehen gemäß DSGVO die Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) zu.</p>
@@ -828,7 +848,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.3';
+    img.src = 'assets/game-logo-mask.png?v=0.4.3.1';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
