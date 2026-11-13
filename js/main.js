@@ -22,7 +22,7 @@ const translations = {
     hero_subtitle: "A high-velocity space roguelite where asteroids are your shield. Weave through bullet-hell curtains, execute invulnerable thruster dashes, and fuse modular weapons to dismantle multi-phase dreadnoughts across 10-wave expeditions.",
     hero_cta_itch: "Get Preview on itch.io",
     hero_cta_discord: "Get Password on Discord",
-    hero_password_note: "<span class=\"neon-text-orange\">🔒 Password Required:</span> The itch.io preview is password-protected. Join our <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> to get instant access.",
+    hero_password_note: "<span class=\"neon-text-orange\">🔒 Password Required:</span> The itch.io preview is password-protected. Join our <a href=\"https://discord.gg/pjmM7vmdB\" target=\"_blank\" rel=\"noopener\">Discord</a> to get instant access.",
     hero_support_note: "🎮 Full Gamepad Support (Xbox, PlayStation, Switch) & Keyboard",
 
     usp_tag: "Tactical Combat Depth",
@@ -107,7 +107,7 @@ const translations = {
     hero_subtitle: "Ein rasanter Weltraum-Roguelite-Auto-Shooter, in dem Asteroiden zu deinen Schutzschilden werden. Manövriere durch dichte Bullet-Hell-Schleier, meistere lebensrettende Triebwerks-Dashes und fusioniere modulare Waffen, um mehrphasige Dreadnoughts in 10-Wellen-Expeditionen zu zerlegen.",
     hero_cta_itch: "Preview auf itch.io holen",
     hero_cta_discord: "Passwort auf Discord holen",
-    hero_password_note: "<span class=\"neon-text-orange\">🔒 Passwort erforderlich:</span> Die itch.io-Preview ist passwortgeschützt. Tritt unserem <a href=\"https://discord.gg/FEmXQx8Tuh\" target=\"_blank\" rel=\"noopener\">Discord</a> bei, um sofortigen Zugriff zu erhalten.",
+    hero_password_note: "<span class=\"neon-text-orange\">🔒 Passwort erforderlich:</span> Die itch.io-Preview ist passwortgeschützt. Tritt unserem <a href=\"https://discord.gg/pjmM7vmdB\" target=\"_blank\" rel=\"noopener\">Discord</a> bei, um sofortigen Zugriff zu erhalten.",
     hero_support_note: "🎮 Volle Gamepad-Unterstützung (Xbox, PlayStation, Switch) & Tastatur",
 
     usp_tag: "Taktischer Tiefgang",
@@ -266,7 +266,7 @@ const legalContent = {
           The <strong>Closed Preview</strong> build of Astrofray is now live on itch.io!
         </p>
         <p style="margin-bottom: 16px;">
-          To unlock the build download on itch.io, you will need the access password. Fetch your password immediately by joining our official <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord Community</a>.
+          To unlock the build download on itch.io, you will need the access password. Fetch your password immediately by joining our official <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord Community</a>.
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Platform Support:</strong> Windows PC standalone. Tested and runs smoothly on Linux desktop and Steam Deck via Steam Proton.
@@ -275,7 +275,7 @@ const legalContent = {
           <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
             Get Preview on itch.io
           </a>
-          <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
+          <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
             Get Password on Discord
           </a>
         </div>
@@ -291,7 +291,7 @@ const legalContent = {
           Der <strong>Closed Preview</strong> Build von Astrofray ist ab sofort auf itch.io verfügbar!
         </p>
         <p style="margin-bottom: 16px;">
-          Um den Download auf itch.io freizuschalten, benötigst du das Zugangspasswort. Du erhältst dein Passwort direkt nach dem Beitritt in unserer offiziellen <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord-Community</a>.
+          Um den Download auf itch.io freizuschalten, benötigst du das Zugangspasswort. Du erhältst dein Passwort direkt nach dem Beitritt in unserer offiziellen <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" style="color: var(--neon-cyan); text-decoration: underline;">Discord-Community</a>.
         </p>
         <div style="background: rgba(0, 240, 255, 0.05); border-left: 3px solid var(--neon-cyan); padding: 8px 12px; margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); text-align: left;">
           <strong style="color: var(--neon-cyan);">Plattform-Unterstützung:</strong> Windows PC Standalone. Getestet und läuft dank Steam Proton einwandfrei auf Linux und dem Steam Deck.
@@ -300,7 +300,7 @@ const legalContent = {
           <a href="https://ezrokstudios.itch.io/astrofray-preview" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
             Preview auf itch.io holen
           </a>
-          <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
+          <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">
             Passwort auf Discord holen
           </a>
         </div>
@@ -426,7 +426,7 @@ const legalContent = {
                 Join our official Discord community to grab your Closed Preview password and receive instant notifications for new patches and builds.
               </div>
               <div style="margin-top: 10px;">
-                <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Join Discord Server</a>
+                <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Join Discord Server</a>
               </div>
             </div>
           </div>
@@ -483,7 +483,7 @@ const legalContent = {
                 Tritt unserer offiziellen Discord-Community bei, um dein Passwort für die Closed Preview zu erhalten und direkt über neue Patches und Builds informiert zu werden.
               </div>
               <div style="margin-top: 10px;">
-                <a href="https://discord.gg/FEmXQx8Tuh" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Discord-Server beitreten</a>
+                <a href="https://discord.gg/pjmM7vmdB" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: 6px 14px;">Discord-Server beitreten</a>
               </div>
             </div>
           </div>
