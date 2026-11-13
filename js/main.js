@@ -73,10 +73,10 @@ const translations = {
     feed_title: "Latest Updates & Patch Notes",
     feed_desc: "Track active gameplay calibrations, visual overhauls, and upcoming playtest milestones.",
     feed_subscribe_btn: "Subscribe to Updates",
-    feed_t1_title: "Version 0.4.2: Tactical Signals, Thruster Capacitors & Loadout Freedom",
-    feed_t1_desc: "Time-critical Salvage Pods and Emergency Repairs mid-wave, the new Thruster Capacitor item line, free weapon mount reassignment, dynamic ship banking, 3-tier HUD scaling, and expanded graphics controls.",
-    feed_t2_title: "Version 0.4.1: Performance Optimizations, Multi-Monitor Support & Onboarding Polish",
-    feed_t2_desc: "Significant frame pacing and GC optimization during heavy combat, seamless multi-monitor display switcher in settings, and an adaptive controls hint overlay for new pilots.",
+    feed_t1_title: "Version 0.4.3: Smoother Opening Waves, Colliding Drone & Sharper Alerts",
+    feed_t1_desc: "New rookie Colliding Drone enemy for Waves 1 & 2, a 4-second forward safe corridor on Wave 1 launch, clearer control prompts, and double-pulsing HUD alerts with an enlarged signal radar chevron.",
+    feed_t2_title: "Version 0.4.2: Tactical Signals, Thruster Capacitors & Loadout Freedom",
+    feed_t2_desc: "Time-critical Salvage Pods and Emergency Repairs mid-wave, the new Thruster Capacitor item line, free weapon mount reassignment, dynamic ship banking, 3-tier HUD scaling, and expanded graphics controls.",
     toast_title: "Stay in Orbit!",
     toast_desc: "Subscribe to patch notes & game updates.",
     toast_btn: "Subscribe",
@@ -158,10 +158,10 @@ const translations = {
     feed_title: "Neueste Updates & Patchnotes",
     feed_desc: "Verfolge aktive Gameplay-Feinabstimmungen, Grafik-Updates und anstehende Playtest-Meilensteine.",
     feed_subscribe_btn: "Updates abonnieren",
-    feed_t1_title: "Version 0.4.2: Taktische Signale, Triebwerkskondensatoren & Freie Waffenplätze",
-    feed_t1_desc: "Zeitkritische Bergungskapseln und Notfallreparaturen im Gefecht, der neue Triebwerkskondensator für schnelleren Dash-Cooldown, freie Waffenplatz-Zuweisung, dynamische Schiffsneigung, 3-stufige HUD-Skalierung und neue Grafikoptionen.",
-    feed_t2_title: "Version 0.4.1: Performance-Optimierungen, Multi-Monitor-Support & Onboarding-Feinschliff",
-    feed_t2_desc: "Drastische Reduzierung von GC-Spitzen im Kampfgeschehen, nahtlose Bildschirmauswahl für Multi-Monitor-Setups und dynamische Steuerungshinweise für neue Piloten.",
+    feed_t1_title: "Version 0.4.3: Sanfterer Einstieg, Kollisionsdrohne & Klarere Alarme",
+    feed_t1_desc: "Neue Kollisionsdrohne für Welle 1 & 2, 4-sekündiger sicherer Startkorridor in Welle 1, klarere Steuerungshinweise sowie zweifach pulsierende HUD-Alarme mit vergrößertem Signal-Radar-Pfeil.",
+    feed_t2_title: "Version 0.4.2: Taktische Signale, Triebwerkskondensatoren & Freie Waffenplätze",
+    feed_t2_desc: "Zeitkritische Bergungskapseln und Notfallreparaturen im Gefecht, der neue Triebwerkskondensator für schnelleren Dash-Cooldown, freie Waffenplatz-Zuweisung, dynamische Schiffsneigung, 3-stufige HUD-Skalierung und neue Grafikoptionen.",
     toast_title: "Auf dem Laufenden bleiben!",
     toast_desc: "Abonniere Patchnotes & Spiel-Updates.",
     toast_btn: "Abonnieren",
@@ -312,7 +312,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to Austrian Media Act (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -331,7 +331,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß Mediengesetz (MedienG)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -828,7 +828,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.2';
+    img.src = 'assets/game-logo-mask.png?v=0.4.3';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load

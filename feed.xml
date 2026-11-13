@@ -5,13 +5,40 @@
     <link>https://ezrokstudios.github.io/astrofray/</link>
     <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 09:00:00 +0100</lastBuildDate>
     <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
       <title>Astrofray</title>
       <link>https://ezrokstudios.github.io/astrofray/</link>
     </image>
+
+    <!-- Version 0.4.3 -->
+    <item>
+      <title>Version 0.4.3 Live: Smoother Opening Waves, Colliding Drone &amp; Sharper Alerts</title>
+      <title xml:lang="de">Version 0.4.3 Live: Sanfterer Einstieg, Kollisionsdrohne &amp; Klarere Alarme</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.4.3</guid>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0100</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.4.3 is live with a smoother early-wave curve, fairer Wave 1 spawns, and punchier in-combat HUD alerts:</p>
+        <ul>
+          <li><strong>New Rookie Enemy — Colliding Drone:</strong> Waves 1 &amp; 2 now open with the slower, dodgeable <em>Colliding Drone</em> before Chainsaw UFOs ramp up the pressure.</li>
+          <li><strong>Fairer Wave 1 Launch:</strong> Ships spawn facing straight up with a 4-second forward safe corridor so you never boost straight into an ambush.</li>
+          <li><strong>Punchier Alerts &amp; Signal Radar:</strong> Controls hints and mid-wave <em>Salvage / Repair</em> popups now trigger a crisp double-pulse, stay visible longer, and enlarge the off-screen radar chevron when a signal drops.</li>
+          <li><strong>Save Compatibility:</strong> 100% compatible with v0.4.0–v0.4.2 savegame progress.</li>
+        </ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <p>Astrofray v0.4.3 ist da – mit sanfterem Einstieg in den ersten Wellen, faireren Spawns und deutlicheren Gefechtshinweisen:</p>
+        <ul>
+          <li><strong>Neuer Einsteiger-Gegner – Kollisionsdrohne:</strong> Welle 1 &amp; 2 starten jetzt mit der langsameren, ausweichbaren <em>Kollisionsdrohne</em>, bevor Kettensägen-UFOs den Druck erhöhen.</li>
+          <li><strong>Fairer Start in Welle 1:</strong> Schiffe starten nach oben ausgerichtet mit einem 4-sekündigen freien Korridor voraus, damit du beim Losfliegen in keinen Hinterhalt gerätst.</li>
+          <li><strong>Deutlichere Alarme &amp; Signal-Radar:</strong> Steuerungshinweise und <em>Bergungs-/Reparatur</em>-Einblendungen pulsieren jetzt zweifach auf, bleiben länger sichtbar und vergrößern den Radar-Pfeil beim Signal-Spawn.</li>
+          <li><strong>Spielstand-Kompatibilität:</strong> Vollständig kompatibel mit deinem Spielstand aus v0.4.0–v0.4.2.</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <!-- Version 0.4.2 -->
     <item>
