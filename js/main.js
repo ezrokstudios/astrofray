@@ -229,12 +229,18 @@ function setLanguage(lang, persist = false) {
 
   // Update HTML attribute
   document.documentElement.lang = lang;
+  document.documentElement.setAttribute('data-js-lang', lang);
 
-  // Update page title & meta description
-  document.title = translations[lang].meta_title;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc && translations[lang].meta_desc) {
-    metaDesc.setAttribute('content', translations[lang].meta_desc);
+  // Update page title & meta description (skip landing meta overwrite on dedicated legal subpages)
+  const customTitle = document.body.getAttribute('data-title-' + lang);
+  if (customTitle) {
+    document.title = customTitle;
+  } else {
+    document.title = translations[lang].meta_title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && translations[lang].meta_desc) {
+      metaDesc.setAttribute('content', translations[lang].meta_desc);
+    }
   }
 
   // Update all data-i18n elements
@@ -312,7 +318,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.3.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3.2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to § 5 ECG, § 63 GewO &amp; § 25 MedienG (Austria)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -341,7 +347,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.3.1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.3.2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß § 5 ECG, § 63 GewO &amp; § 25 MedienG</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -549,11 +555,16 @@ function closeModal() {
 }
 
 function initModals() {
+  const modal = document.getElementById('legal-modal');
+  if (!modal) return;
+
   document.addEventListener('click', (e) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
     const trigger = e.target.closest('[data-modal]');
-    if (trigger) {
+    if (!trigger) return;
+    const type = trigger.getAttribute('data-modal');
+    if (legalContent[type]) {
       e.preventDefault();
-      const type = trigger.getAttribute('data-modal');
       openModal(type);
     }
   });
@@ -561,12 +572,9 @@ function initModals() {
   const closeBtn = document.getElementById('modal-close-btn');
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
 
-  const modal = document.getElementById('legal-modal');
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
-    });
-  }
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
@@ -848,7 +856,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.3.1';
+    img.src = 'assets/game-logo-mask.png?v=0.4.3.2';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
