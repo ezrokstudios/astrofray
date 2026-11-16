@@ -5,13 +5,42 @@
     <link>https://ezrokstudios.github.io/astrofray/</link>
     <description>Official devlogs, patch notes, and Closed Preview announcements for Astrofray by Ezrok Studios.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 09:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 09:40:00 +0100</lastBuildDate>
     <atom:link href="https://ezrokstudios.github.io/astrofray/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://ezrokstudios.github.io/astrofray/assets/game-icon.png</url>
       <title>Astrofray</title>
       <link>https://ezrokstudios.github.io/astrofray/</link>
     </image>
+
+    <!-- Version 0.4.4 -->
+    <item>
+      <title>Version 0.4.4 Live: Combat Sound Overhaul, Dash Feedback &amp; Clearer Shop Stats</title>
+      <title xml:lang="de">Version 0.4.4 Live: Neues Kampf-Sounddesign, Dash-Feedback &amp; Klarere Shop-Werte</title>
+      <link>https://ezrokstudios.github.io/astrofray/#updates</link>
+      <guid isPermaLink="false">astrofray-v0.4.4</guid>
+      <pubDate>Mon, 16 Nov 2026 09:40:00 +0100</pubDate>
+      <description><![CDATA[
+        <p>Astrofray v0.4.4 is live with punchier combat audio, instant dash readiness cues, clearer stat readouts, and victory scrap breakdowns:</p>
+        <ul>
+          <li><strong>Overhauled Combat Sound Design:</strong> Distinct <em>player-hit</em>, <em>pickup collection</em>, and <em>Boss Charge</em> SFX, dynamic pitch variation across weapons and explosions, plus a balanced default audio mix.</li>
+          <li><strong>Instant Dash Readiness Feedback:</strong> Recharged dash pips pop with an audio chime when ready, while dashing on empty triggers a red HUD shake and warning tone.</li>
+          <li><strong>Clearer Shop &amp; Hangar Readouts:</strong> <em>Hull HP</em> and <em>Total DPS</em> stand out in both the Ship Selection and Upgrade screens, with full-row highlights showing every stat an item or weapon changes.</li>
+          <li><strong>Victory Scrap Breakdown &amp; Vector Icons:</strong> Wave victories now show <em>Direct (100%)</em> vs. <em>Auto-Vacuum (-33%)</em> Scrap yields, paired with sharp SVG icons across shop cards, loadouts, and PlayStation prompts.</li>
+          <li><strong>Fixes &amp; Save Compatibility:</strong> Faster startup init, combat particles no longer linger in the Main Menu, and 100% compatible with v0.4.0–v0.4.3 savegames.</li>
+        </ul>
+      ]]></description>
+      <description xml:lang="de"><![CDATA[
+        <p>Astrofray v0.4.4 ist da – mit wuchtigerem Kampf-Sounddesign, direktem Dash-Feedback, klareren Upgrade-Werten und Sieges-Schrottübersicht:</p>
+        <ul>
+          <li><strong>Überarbeitetes Kampf-Sounddesign:</strong> Eigene Sounds für <em>Spieler-Treffer</em>, <em>Pickup-Einsammeln</em> und <em>Boss-Ansturm</em>, dynamische Tonhöhen-Variation für Waffen und Explosionen sowie eine ausgewogene Standard-Lautstärke.</li>
+          <li><strong>Direktes Dash-Feedback:</strong> Aufgeladene Dash-Segmente pulsieren mit Signalton, während ein Dash ohne Ladung ein rotes HUD-Rütteln samt Warnton auslöst.</li>
+          <li><strong>Klarere Shop- &amp; Hangar-Werte:</strong> <em>Hüllen-HP</em> und <em>Gesamt-DPS</em> stechen in Schiffsauswahl und Upgrade-Menü hervor, ergänzt durch farbige Zeilen-Markierungen für geänderte Werte.</li>
+          <li><strong>Sieges-Schrottübersicht &amp; Vektor-Icons:</strong> Nach gewonnenen Wellen siehst du nun <em>Direkt (100%)</em> vs. <em>Auto-Vakuum (-33%)</em> Schrott, dazu gestochen scharfe SVG-Icons in Shop, Ausrüstung und PlayStation-Prompts.</li>
+          <li><strong>Fixes &amp; Spielstand-Kompatibilität:</strong> Schnellerer Spielstart, keine Rest-Partikel mehr im Hauptmenü und vollständig kompatibel mit Spielständen aus v0.4.0–v0.4.3.</li>
+        </ul>
+      ]]></description>
+    </item>
 
     <!-- Version 0.4.3 -->
     <item>
