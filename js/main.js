@@ -10,7 +10,7 @@
 // ==========================================
 const translations = {
   en: {
-    meta_title: "Astrofray | Sci-Fi Space Roguelite Auto-Shooter by Ezrok Studios",
+    meta_title: "Astrofray — Sci-Fi Space Roguelite Auto-Shooter",
     meta_desc: "Survive bullet-hell swarms behind fracturing physics asteroids. Astrofray is a high-speed space roguelite auto-shooter by Ezrok Studios. Enlist dynamic asteroid cover, fuse MK1-MK3 weapons, and conquer colossal dreadnoughts.",
     nav_features: "Features",
     nav_ships: "Ships",
@@ -95,7 +95,7 @@ const translations = {
   },
 
   de: {
-    meta_title: "Astrofray | Sci-Fi Weltraum-Roguelite Auto-Shooter von Ezrok Studios",
+    meta_title: "Astrofray — Sci-Fi Weltraum-Roguelite Auto-Shooter",
     meta_desc: "Überlebe Bullet-Hell-Schwärme im Schutz splitternder Physik-Asteroiden. Astrofray ist ein rasanter Sci-Fi Weltraum-Roguelite-Auto-Shooter. Nutze Asteroiden als kinetische Schilde, fusioniere Waffen und bezwinge kolossale Dreadnoughts.",
     nav_features: "Features",
     nav_ships: "Schiffe",
@@ -318,7 +318,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-seo1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to § 5 ECG, § 63 GewO &amp; § 25 MedienG (Austria)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -347,7 +347,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-seo1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß § 5 ECG, § 63 GewO &amp; § 25 MedienG</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -856,7 +856,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.4';
+    img.src = 'assets/game-logo-mask.png?v=0.4.4-seo1';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
