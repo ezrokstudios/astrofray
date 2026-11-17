@@ -1225,8 +1225,299 @@ html[data-js-lang="de"] [data-lang-block="en"] {
   gap: 12px;
 }
 
+/* COMBAT MEDIA SHOWCASE (TRAILER & SCREENSHOTS) */
+.media-section {
+  padding: 40px 0 72px;
+  position: relative;
+}
+
+.trailer-player-card {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto 36px auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #06070b;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 36px rgba(0, 240, 255, 0.14);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.trailer-player-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 46px rgba(0, 240, 255, 0.28);
+}
+
+.trailer-player-card.is-playing {
+  cursor: default;
+}
+
+.trailer-poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+}
+
+.trailer-player-card:hover .trailer-poster-img {
+  transform: scale(1.02);
+  filter: brightness(1.08);
+}
+
+.trailer-poster-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: radial-gradient(circle at center, rgba(6, 7, 11, 0.25) 0%, rgba(6, 7, 11, 0.65) 100%);
+  transition: background 0.25s ease;
+}
+
+.trailer-player-card:hover .trailer-poster-overlay {
+  background: radial-gradient(circle at center, rgba(6, 7, 11, 0.15) 0%, rgba(6, 7, 11, 0.5) 100%);
+}
+
+.trailer-play-btn {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 2px solid var(--neon-cyan);
+  background: rgba(6, 7, 11, 0.8);
+  color: var(--neon-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 28px rgba(0, 240, 255, 0.45);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.trailer-player-card:hover .trailer-play-btn {
+  transform: scale(1.1);
+  background: var(--neon-cyan);
+  color: #04070c;
+  box-shadow: 0 0 38px rgba(0, 240, 255, 0.75);
+}
+
+.trailer-play-btn svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  fill: currentColor;
+}
+
+.trailer-cta-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(6, 7, 11, 0.82);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+
+.trailer-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.screenshot-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--panel-border);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  padding: 0;
+}
+
+.screenshot-card:hover {
+  border-color: var(--panel-border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 240, 255, 0.16);
+}
+
+.screenshot-thumb-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #030407;
+}
+
+.screenshot-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.screenshot-card:hover .screenshot-thumb-wrap img {
+  transform: scale(1.04);
+}
+
+.screenshot-zoom-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(6, 7, 11, 0.82);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  color: var(--neon-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.screenshot-card:hover .screenshot-zoom-badge {
+  opacity: 1;
+}
+
+.screenshot-caption {
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* LIGHTBOX MODAL */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2200;
+  background: rgba(3, 4, 8, 0.94);
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: 1120px;
+  width: 100%;
+  background: #090d16;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 48px rgba(0, 240, 255, 0.2);
+}
+
+.lightbox-img {
+  width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
+  display: block;
+  background: #030407;
+}
+
+.lightbox-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  border-top: 1px solid rgba(0, 240, 255, 0.18);
+}
+
+.lightbox-caption {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lightbox-counter {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--neon-cyan);
+  white-space: nowrap;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  background: rgba(6, 7, 11, 0.82);
+  color: var(--neon-cyan);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.lightbox-nav:hover {
+  background: var(--neon-cyan);
+  color: #04070c;
+}
+
+.lightbox-prev { left: 14px; }
+.lightbox-next { right: 14px; }
+
+.lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(6, 7, 11, 0.85);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 3;
+  transition: var(--transition);
+}
+
+.lightbox-close:hover {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 992px) {
+  .screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .features-grid {
     grid-template-columns: 1fr;
   }
@@ -1243,7 +1534,18 @@ html[data-js-lang="de"] [data-lang-block="en"] {
     display: none;
   }
   .hero {
-    padding: 60px 0 80px;
+    padding: 60px 0 60px;
+  }
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+  }
+  .trailer-play-btn {
+    width: 60px;
+    height: 60px;
+  }
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
   }
   .hero-actions {
     flex-direction: column;

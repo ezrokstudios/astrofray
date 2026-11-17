@@ -12,10 +12,22 @@ const translations = {
   en: {
     meta_title: "Astrofray — Sci-Fi Space Roguelite Auto-Shooter",
     meta_desc: "Survive bullet-hell swarms behind fracturing physics asteroids. Astrofray is a high-speed space roguelite auto-shooter by Ezrok Studios. Enlist dynamic asteroid cover, fuse MK1-MK3 weapons, and conquer colossal dreadnoughts.",
+    nav_media: "Media",
     nav_features: "Features",
     nav_ships: "Ships",
     nav_updates: "Updates",
     nav_cta: "Join Preview",
+
+    media_tag: "Combat Showcase",
+    media_title: "Trailer & In-Game Footage",
+    media_desc: "Unedited 1080p60 gameplay from the active preview build—watch asteroids block incoming salvos, merge modular weapons, and confront boss encounters.",
+    media_trailer_cta: "Watch Preview Trailer (0:36)",
+    media_cap_1: "Kinetic Asteroid Cover vs. Boss Barrages",
+    media_cap_2: "Shattered Sub-Asteroids & Thruster Dashing",
+    media_cap_3: "Close-Range Dreadnought Spiral Duel",
+    media_cap_4: "Explosive Multi-Enemy Crossfire",
+    media_cap_5: "Escalating Wave Dogfights & Scrap Drops",
+    media_cap_6: "Upgrade Shop & Modular Weapon Fusion",
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Survive the Swarm.<br><span class=\"neon-text-cyan\">Use the Debris.</span><br>Merge Your Arsenal.",
@@ -97,10 +109,22 @@ const translations = {
   de: {
     meta_title: "Astrofray — Sci-Fi Weltraum-Roguelite Auto-Shooter",
     meta_desc: "Überlebe Bullet-Hell-Schwärme im Schutz splitternder Physik-Asteroiden. Astrofray ist ein rasanter Sci-Fi Weltraum-Roguelite-Auto-Shooter. Nutze Asteroiden als kinetische Schilde, fusioniere Waffen und bezwinge kolossale Dreadnoughts.",
+    nav_media: "Media",
     nav_features: "Features",
     nav_ships: "Schiffe",
     nav_updates: "Updates",
     nav_cta: "Zur Preview",
+
+    media_tag: "Kampf-Showcase",
+    media_title: "Trailer & Spielszenen",
+    media_desc: "Ungeschönte 1080p60-Spielszenen aus dem aktuellen Preview-Build – erlebe Asteroiden als Schutzschilde, modulare Waffenfusion und packende Bosskämpfe.",
+    media_trailer_cta: "Preview-Trailer abspielen (0:36)",
+    media_cap_1: "Kinetische Asteroiden-Deckung gegen Boss-Salven",
+    media_cap_2: "Zersplitterte Asteroiden & Triebwerks-Dash",
+    media_cap_3: "Dreadnought-Duell im Kugelsturm",
+    media_cap_4: "Explosive Schwarm-Gefechte im Kreuzfeuer",
+    media_cap_5: "Eskalierende Kampagnenwellen & Schrott-Beute",
+    media_cap_6: "Upgrade-Shop & Modulare Waffenfusion",
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Überlebe den Schwarm.<br><span class=\"neon-text-cyan\">Nutze die Trümmer.</span><br>Fusioniere dein Arsenal.",
@@ -318,7 +342,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4-seo1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to § 5 ECG, § 63 GewO &amp; § 25 MedienG (Austria)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -347,7 +371,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4-seo1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß § 5 ECG, § 63 GewO &amp; § 25 MedienG</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -856,7 +880,7 @@ function initHeroLogoShader() {
 
   img.onerror = () => {
     console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.4-seo1';
+    img.src = 'assets/game-logo-mask.png?v=0.4.4-media1';
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
@@ -887,7 +911,101 @@ function initHeroLogoShader() {
 }
 
 // ==========================================
-// 5. INITIALIZATION ON DOM READY
+// 5. COMBAT MEDIA SHOWCASE (TRAILER & LIGHTBOX)
+// ==========================================
+const mediaGalleryItems = [
+  { src: 'assets/screenshots/01_boss_asteroid_cover.webp?v=0.4.4-media1', key: 'media_cap_1' },
+  { src: 'assets/screenshots/02_shattered_asteroids_dash.webp?v=0.4.4-media1', key: 'media_cap_2' },
+  { src: 'assets/screenshots/03_boss_spiral_duel.webp?v=0.4.4-media1', key: 'media_cap_3' },
+  { src: 'assets/screenshots/04_explosive_swarm_combat.webp?v=0.4.4-media1', key: 'media_cap_4' },
+  { src: 'assets/screenshots/05_multi_enemy_dogfight.webp?v=0.4.4-media1', key: 'media_cap_5' },
+  { src: 'assets/screenshots/06_upgrade_shop_fusion.webp?v=0.4.4-media1', key: 'media_cap_6' }
+];
+
+function initMediaShowcase() {
+  const trailerCard = document.getElementById('trailerPlayerCard');
+  if (trailerCard) {
+    const loadTrailer = () => {
+      if (trailerCard.classList.contains('is-playing')) return;
+      trailerCard.classList.add('is-playing');
+      trailerCard.removeAttribute('role');
+      trailerCard.removeAttribute('tabindex');
+      trailerCard.innerHTML = '<iframe class="trailer-iframe" src="https://www.youtube-nocookie.com/embed/vIUJi6Di180?autoplay=1&rel=0" title="Astrofray Preview Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    };
+    trailerCard.addEventListener('click', loadTrailer);
+    trailerCard.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        loadTrailer();
+      }
+    });
+  }
+
+  const lightbox = document.getElementById('mediaLightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbCap = document.getElementById('lightboxCaption');
+  const lbCnt = document.getElementById('lightboxCounter');
+  if (!lightbox || !lbImg) return;
+
+  let activeIdx = 0;
+
+  function renderSlide() {
+    const item = mediaGalleryItems[activeIdx];
+    const capText = (translations[currentLang] && translations[currentLang][item.key]) || '';
+    lbImg.src = item.src;
+    lbImg.alt = capText;
+    if (lbCap) lbCap.textContent = capText;
+    if (lbCnt) lbCnt.textContent = `${activeIdx + 1} / ${mediaGalleryItems.length}`;
+  }
+
+  function openLightbox(idx) {
+    activeIdx = (idx + mediaGalleryItems.length) % mediaGalleryItems.length;
+    renderSlide();
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox.classList.contains('active')) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function stepSlide(delta) {
+    activeIdx = (activeIdx + delta + mediaGalleryItems.length) % mediaGalleryItems.length;
+    renderSlide();
+  }
+
+  document.querySelectorAll('.screenshot-card[data-lightbox-index]').forEach(card => {
+    card.addEventListener('click', () => {
+      const idx = parseInt(card.getAttribute('data-lightbox-index'), 10) || 0;
+      openLightbox(idx);
+    });
+  });
+
+  const prevBtn = document.getElementById('lightboxPrevBtn');
+  const nextBtn = document.getElementById('lightboxNextBtn');
+  const closeBtn = document.getElementById('lightboxCloseBtn');
+  if (prevBtn) prevBtn.addEventListener('click', () => stepSlide(-1));
+  if (nextBtn) nextBtn.addEventListener('click', () => stepSlide(1));
+  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') stepSlide(-1);
+    else if (e.key === 'ArrowRight') stepSlide(1);
+  });
+}
+
+// ==========================================
+// 6. INITIALIZATION ON DOM READY
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
   // Determine preferred language: URL parameter, saved choice, or browser German detection
@@ -910,4 +1028,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize real-time in-game WebGL shader logo
   initHeroLogoShader();
+
+  // Initialize trailer player & screenshot lightbox
+  initMediaShowcase();
 });

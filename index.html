@@ -21,11 +21,11 @@
   <meta http-equiv="Expires" content="0">
 
   <!-- Favicons -->
-  <link rel="icon" href="favicon.ico?v=0.4.4-seo1" sizes="any">
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png?v=0.4.4-seo1">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png?v=0.4.4-seo1">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=0.4.4-seo1">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=0.4.4-seo1">
+  <link rel="icon" href="favicon.ico?v=0.4.4-media1" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png?v=0.4.4-media1">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png?v=0.4.4-media1">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=0.4.4-media1">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=0.4.4-media1">
 
   <!-- RSS / Info Feed Discovery -->
   <link rel="alternate" type="application/rss+xml" title="Astrofray Devlog &amp; Updates" href="feed.xml">
@@ -126,6 +126,23 @@
         "applicationCategory": "Game",
         "inLanguage": ["en", "de"],
         "playMode": "SinglePlayer",
+        "trailer": {
+          "@type": "VideoObject",
+          "name": "Astrofray Preview Trailer",
+          "description": "Gameplay preview trailer for Astrofray featuring kinetic asteroid cover, weapon fusion, and boss encounters.",
+          "thumbnailUrl": "https://ezrokstudios.github.io/astrofray/assets/screenshots/01_boss_asteroid_cover.webp",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/vIUJi6Di180",
+          "url": "https://youtu.be/vIUJi6Di180",
+          "uploadDate": "2026-11-17"
+        },
+        "screenshot": [
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/01_boss_asteroid_cover.webp",
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/02_shattered_asteroids_dash.webp",
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/03_boss_spiral_duel.webp",
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/04_explosive_swarm_combat.webp",
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/05_multi_enemy_dogfight.webp",
+          "https://ezrokstudios.github.io/astrofray/assets/screenshots/06_upgrade_shop_fusion.webp"
+        ],
         "author": {
           "@id": "https://ezrokstudios.github.io/astrofray/#organization"
         },
@@ -147,7 +164,7 @@
 
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=0.4.4-seo1">
+  <link rel="stylesheet" href="css/styles.css?v=0.4.4-media1">
 </head>
 <body>
 
@@ -159,7 +176,7 @@
   <header class="navbar">
     <div class="container">
       <a href="#" class="nav-brand">
-        <img src="assets/game-icon.png?v=0.4.4-seo1" alt="Astrofray Game Icon">
+        <img src="assets/game-icon.png?v=0.4.4-media1" alt="Astrofray Game Icon">
         <div class="brand-text">
           <span class="brand-title">Astrofray</span>
           <span class="brand-sub">Ezrok Studios</span>
@@ -168,6 +185,7 @@
 
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
+          <li><a href="#media" data-i18n="nav_media">Media</a></li>
           <li><a href="#features" data-i18n="nav_features">Features</a></li>
           <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
           <li><a href="#updates" data-i18n="nav_updates">Updates</a></li>
@@ -194,7 +212,7 @@
         <!-- Real-Time Procedural Neon Logo (Exact Unity URP Shader running in WebGL) -->
         <div class="hero-logo-wrapper" id="heroLogoContainer" title="Astrofray">
           <canvas id="heroLogoCanvas" width="2048" height="512" class="astrofray-logo-canvas" aria-label="Astrofray Game Logo"></canvas>
-          <img id="heroLogoFallback" src="assets/game-logo.png?v=0.4.4-seo1" alt="Astrofray Game Logo" class="astrofray-logo-fallback" style="display: none;">
+          <img id="heroLogoFallback" src="assets/game-logo.png?v=0.4.4-media1" alt="Astrofray Game Logo" class="astrofray-logo-fallback" style="display: none;">
         </div>
 
         <div class="hero-status-pill">
@@ -226,6 +244,81 @@
           🎮 Full Gamepad Support (Xbox, PlayStation, Switch) &amp; Keyboard
         </div>
 
+      </div>
+    </section>
+
+    <!-- Combat Media Showcase (Trailer & Screenshots) -->
+    <section class="media-section" id="media">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 32px;">
+          <div class="section-tag" data-i18n="media_tag">Combat Showcase</div>
+          <h2 class="section-title" data-i18n="media_title">Trailer &amp; In-Game Footage</h2>
+          <p class="section-desc" data-i18n="media_desc">
+            Unedited 1080p60 gameplay from the active preview build—watch asteroids block incoming salvos, merge modular weapons, and confront boss encounters.
+          </p>
+        </div>
+
+        <!-- Click-to-Play Privacy-Enhanced YouTube Trailer -->
+        <div class="trailer-player-card" id="trailerPlayerCard" role="button" tabindex="0" aria-label="Play Astrofray Preview Trailer">
+          <img src="assets/screenshots/01_boss_asteroid_cover.webp?v=0.4.4-media1" alt="Astrofray Preview Trailer Thumbnail" class="trailer-poster-img">
+          <div class="trailer-poster-overlay">
+            <span class="trailer-play-btn" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            <span class="trailer-cta-label" data-i18n="media_trailer_cta">Watch Preview Trailer (0:36)</span>
+          </div>
+        </div>
+
+        <!-- 6-Screenshot Gallery Grid -->
+        <div class="screenshots-grid">
+          <button type="button" class="screenshot-card" data-lightbox-index="0">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/01_boss_asteroid_cover.webp?v=0.4.4-media1" alt="Boss spiral curtains blocked by drifting asteroids" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_1">Kinetic Asteroid Cover vs. Boss Barrages</div>
+          </button>
+
+          <button type="button" class="screenshot-card" data-lightbox-index="1">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/02_shattered_asteroids_dash.webp?v=0.4.4-media1" alt="Shattered sub-asteroids and thruster dash trail" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_2">Shattered Sub-Asteroids &amp; Thruster Dashing</div>
+          </button>
+
+          <button type="button" class="screenshot-card" data-lightbox-index="2">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/03_boss_spiral_duel.webp?v=0.4.4-media1" alt="Close-quarters duel against alien boss spirals" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_3">Close-Range Dreadnought Spiral Duel</div>
+          </button>
+
+          <button type="button" class="screenshot-card" data-lightbox-index="3">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/04_explosive_swarm_combat.webp?v=0.4.4-media1" alt="Rust skin Scout Fighter battling saw-spinners" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_4">Explosive Multi-Enemy Crossfire</div>
+          </button>
+
+          <button type="button" class="screenshot-card" data-lightbox-index="4">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/05_multi_enemy_dogfight.webp?v=0.4.4-media1" alt="Multi-archetype enemy wave and disintegration VFX" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_5">Escalating Wave Dogfights &amp; Scrap Drops</div>
+          </button>
+
+          <button type="button" class="screenshot-card" data-lightbox-index="5">
+            <div class="screenshot-thumb-wrap">
+              <img src="assets/screenshots/06_upgrade_shop_fusion.webp?v=0.4.4-media1" alt="Upgrade shop displaying weapon cards and fusion badge" loading="lazy">
+              <span class="screenshot-zoom-badge" aria-hidden="true">&#x2922;</span>
+            </div>
+            <div class="screenshot-caption" data-i18n="media_cap_6">Upgrade Shop &amp; Modular Weapon Fusion</div>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -325,7 +418,7 @@
             <!-- Ship 1: Interceptor -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/interceptor.png?v=0.4.4-seo1" alt="Astrofray Interceptor Ship Sprite">
+                <img src="assets/ships/interceptor.png?v=0.4.4-media1" alt="Astrofray Interceptor Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship1_name">Interceptor</h3>
               <div class="ship-archetype" data-i18n="ship1_archetype">Ultra-Agile Skirmisher</div>
@@ -337,7 +430,7 @@
             <!-- Ship 2: Scout Fighter -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/scoutfighter.png?v=0.4.4-seo1" alt="Astrofray Scout Fighter Ship Sprite">
+                <img src="assets/ships/scoutfighter.png?v=0.4.4-media1" alt="Astrofray Scout Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship2_name">Scout Fighter</h3>
               <div class="ship-archetype" data-i18n="ship2_archetype">Tactical Fleet All-Rounder</div>
@@ -349,7 +442,7 @@
             <!-- Ship 3: Heavy Fighter -->
             <article class="ship-card">
               <div class="ship-visual-wrap">
-                <img src="assets/ships/heavyfighter.png?v=0.4.4-seo1" alt="Astrofray Heavy Fighter Ship Sprite">
+                <img src="assets/ships/heavyfighter.png?v=0.4.4-media1" alt="Astrofray Heavy Fighter Ship Sprite">
               </div>
               <h3 class="ship-name" data-i18n="ship3_name">Heavy Fighter</h3>
               <div class="ship-archetype" data-i18n="ship3_archetype">Armored Gunship</div>
@@ -432,16 +525,16 @@
       <div class="footer-top">
         <div class="footer-brand-info">
           <div class="footer-logo">
-            <img src="assets/game-icon.png?v=0.4.4-seo1" alt="Astrofray Game Icon">
+            <img src="assets/game-icon.png?v=0.4.4-media1" alt="Astrofray Game Icon">
             <span class="brand-title">Astrofray</span>
           </div>
           <p class="footer-desc" data-i18n="footer_desc">
-            Survive the swarm, master kinetic asteroid cover, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.
+            Survive the swarm, master kinetic asteroid shields, and forge devastating weapon synergies in deep space. Developed by Ezrok Studios.
           </p>
           <div class="footer-studio-badge">
             <span class="studio-badge-label" data-i18n="footer_developed_by">DEVELOPED BY</span>
             <div class="studio-logo-wrap" title="Ezrok Studios">
-              <img src="assets/ezrok-studios-logo.png?v=0.4.4-seo1" alt="Ezrok Studios Logo" class="footer-studio-img">
+              <img src="assets/ezrok-studios-logo.png?v=0.4.4-media1" alt="Ezrok Studios Logo" class="footer-studio-img">
             </div>
           </div>
         </div>
@@ -450,6 +543,7 @@
           <div>
             <div class="footer-col-title" data-i18n="footer_col_nav">Navigation</div>
             <ul class="footer-links">
+              <li><a href="#media" data-i18n="nav_media">Media</a></li>
               <li><a href="#features" data-i18n="nav_features">Features</a></li>
               <li><a href="#ships" data-i18n="nav_ships">Ships</a></li>
               <li><a href="#updates" data-i18n="nav_updates">Updates</a></li>
@@ -495,6 +589,20 @@
     </div>
   </div>
 
+  <!-- Screenshot Lightbox Modal -->
+  <div class="lightbox-overlay" id="mediaLightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close" id="lightboxCloseBtn" aria-label="Close">&times;</button>
+      <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrevBtn" aria-label="Previous">&#8249;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <button type="button" class="lightbox-nav lightbox-next" id="lightboxNextBtn" aria-label="Next">&#8250;</button>
+      <div class="lightbox-bar">
+        <span class="lightbox-caption" id="lightboxCaption"></span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+  </div>
+
   <!-- Non-Intrusive Subscription HUD Toast -->
   <aside class="feed-toast" id="feedToast" aria-label="Updates Announcement">
     <div class="feed-toast-icon">📡</div>
@@ -509,6 +617,6 @@
   </aside>
 
   <!-- Main JavaScript File -->
-  <script src="js/main.js?v=0.4.4-seo1"></script>
+  <script src="js/main.js?v=0.4.4-media1"></script>
 </body>
 </html>
