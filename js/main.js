@@ -20,14 +20,14 @@ const translations = {
 
     media_tag: "Combat Showcase",
     media_title: "Trailer & In-Game Footage",
-    media_desc: "Unedited 1080p60 gameplay from the active preview build—watch asteroids block incoming salvos, merge modular weapons, and confront boss encounters.",
+    media_desc: "Real captured gameplay footage from the active preview build—watch asteroids block incoming salvos, merge modular weapons, and confront boss encounters.",
     media_trailer_cta: "Watch Preview Trailer (0:36)",
-    media_cap_1: "Kinetic Asteroid Cover vs. Boss Barrages",
-    media_cap_2: "Shattered Sub-Asteroids & Thruster Dashing",
-    media_cap_3: "Close-Range Dreadnought Spiral Duel",
-    media_cap_4: "Explosive Multi-Enemy Crossfire",
-    media_cap_5: "Escalating Wave Dogfights & Scrap Drops",
-    media_cap_6: "Upgrade Shop & Modular Weapon Fusion",
+    media_cap_1: "Asteroids Blocking Boss Dreadnought Barrages",
+    media_cap_2: "Interceptor Emergency Repair Blast Amid Enemy Fire",
+    media_cap_3: "Scout Fighter vs. Boss Dreadnought in Deep Nebula",
+    media_cap_4: "Fiery Boss Explosion & Incoming Diamond Shards",
+    media_cap_5: "Close-Quarters Dogfight Against Crimson Striker",
+    media_cap_6: "Boss Reward Shop with MK2 Weapon Upgrade & DPS Stats",
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Survive the Swarm.<br><span class=\"neon-text-cyan\">Use the Debris.</span><br>Merge Your Arsenal.",
@@ -117,14 +117,14 @@ const translations = {
 
     media_tag: "Kampf-Showcase",
     media_title: "Trailer & Spielszenen",
-    media_desc: "Ungeschönte 1080p60-Spielszenen aus dem aktuellen Preview-Build – erlebe Asteroiden als Schutzschilde, modulare Waffenfusion und packende Bosskämpfe.",
+    media_desc: "Echtes aufgenommenes Gameplay aus dem aktuellen Preview-Build – erlebe Asteroiden als Schutzschilde, modulare Waffenfusion und packende Bosskämpfe.",
     media_trailer_cta: "Preview-Trailer abspielen (0:36)",
-    media_cap_1: "Kinetische Asteroiden-Deckung gegen Boss-Salven",
-    media_cap_2: "Zersplitterte Asteroiden & Triebwerks-Dash",
-    media_cap_3: "Dreadnought-Duell im Kugelsturm",
-    media_cap_4: "Explosive Schwarm-Gefechte im Kreuzfeuer",
-    media_cap_5: "Eskalierende Kampagnenwellen & Schrott-Beute",
-    media_cap_6: "Upgrade-Shop & Modulare Waffenfusion",
+    media_cap_1: "Asteroiden als Schutzschild gegen Boss-Salven",
+    media_cap_2: "Interceptor-Notfallreparatur inmitten gegnerischen Feuers",
+    media_cap_3: "Scout Fighter gegen Boss-Dreadnought im tiefen Nebel",
+    media_cap_4: "Explosive Boss-Detonation & heranstürmende Diamant-Splitter",
+    media_cap_5: "Rasantes Nahkampf-Duell gegen Crimson Striker",
+    media_cap_6: "Boss-Belohnungs-Shop mit MK2-Waffenupgrade & Live-DPS",
 
     hero_status: "Closed Preview Live",
     hero_slogan: "Überlebe den Schwarm.<br><span class=\"neon-text-cyan\">Nutze die Trümmer.</span><br>Fusioniere dein Arsenal.",
@@ -342,7 +342,7 @@ const legalContent = {
       title: "Legal Notice / Imprint (Impressum)",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Information pursuant to § 5 ECG, § 63 GewO &amp; § 25 MedienG (Austria)</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -371,7 +371,7 @@ const legalContent = {
       title: "Impressum & Offenlegung",
       body: `
         <div style="text-align: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid rgba(0, 240, 255, 0.15);">
-          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media1" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
+          <img src="assets/ezrok-studios-logo.png?v=0.4.4-media2" alt="Ezrok Studios" style="max-height: 48px; width: auto; filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.35));">
         </div>
         <h4>Angaben gemäß § 5 ECG, § 63 GewO &amp; § 25 MedienG</h4>
         <p><strong>Ezrok Studios</strong><br>
@@ -700,11 +700,20 @@ function initHeroLogoShader() {
     if (fallback) fallback.style.display = 'block';
   }
 
-  const gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true });
-  if (!gl) {
-    console.warn('WebGL not supported, using fallback static logo.');
-    showFallback();
-    return;
+  function showCanvas() {
+    if (fallback) fallback.style.display = 'none';
+    canvas.style.display = 'block';
+  }
+
+  function syncCanvasSize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const cssWidth = canvas.clientWidth || 680;
+    const targetWidth = Math.min(1360, Math.max(680, Math.round(cssWidth * dpr)));
+    const targetHeight = Math.round(targetWidth * 0.25);
+    if (canvas.width !== targetWidth || canvas.height !== targetHeight) {
+      canvas.width = targetWidth;
+      canvas.height = targetHeight;
+    }
   }
 
   const vsSource = `
@@ -801,69 +810,41 @@ function initHeroLogoShader() {
     }
   `;
 
-  function createShader(type, src) {
-    const s = gl.createShader(type);
-    gl.shaderSource(s, src);
-    gl.compileShader(s);
-    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
-      console.error('Shader compile error:', gl.getShaderInfoLog(s));
-      gl.deleteShader(s);
-      return null;
-    }
-    return s;
-  }
+  let gl = null;
+  let program = null;
+  let uTex = null;
+  let uTime = null;
+  let rafId = null;
+  let maskReady = false;
+  let isInViewport = true;
+  let isContextLost = false;
+  const startTime = performance.now();
 
-  const vs = createShader(gl.VERTEX_SHADER, vsSource);
-  const fs = createShader(gl.FRAGMENT_SHADER, fsSource);
-  if (!vs || !fs) {
-    showFallback();
-    return;
-  }
-
-  const program = gl.createProgram();
-  gl.attachShader(program, vs);
-  gl.attachShader(program, fs);
-  gl.linkProgram(program);
-  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-    console.error('Program link error:', gl.getProgramInfoLog(program));
-    showFallback();
-    return;
-  }
-  gl.useProgram(program);
-
-  // Fullscreen quad buffer
-  const buffer = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-    -1, -1,
-     1, -1,
-    -1,  1,
-    -1,  1,
-     1, -1,
-     1,  1
-  ]), gl.STATIC_DRAW);
-
-  const aPos = gl.getAttribLocation(program, 'aPos');
-  gl.enableVertexAttribArray(aPos);
-  gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
-
-  const uTex = gl.getUniformLocation(program, 'uTex');
-  const uTime = gl.getUniformLocation(program, 'uTime');
-
-  // Texture setup
-  const texture = gl.createTexture();
   const img = new Image();
-  img.onload = () => {
-    gl.bindTexture(gl.TEXTURE_2D, texture);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
 
-    let startTime = performance.now();
-    function render(time) {
-      const elapsed = (time - startTime) * 0.001;
+  function stopLoop() {
+    if (rafId !== null) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+  }
+
+  function startLoop() {
+    if (rafId !== null || !maskReady || !gl || isContextLost || document.hidden || !isInViewport) {
+      return;
+    }
+    rafId = requestAnimationFrame(render);
+  }
+
+  function render(time) {
+    rafId = null;
+    if (!gl || isContextLost || gl.isContextLost() || document.hidden || !isInViewport) {
+      return;
+    }
+
+    try {
+      syncCanvasSize();
+      const elapsed = ((time - startTime) * 0.001) % 3600;
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.clearColor(0, 0, 0, 0);
       gl.clear(gl.COLOR_BUFFER_BIT);
@@ -873,14 +854,176 @@ function initHeroLogoShader() {
       gl.uniform1f(uTime, elapsed);
       gl.drawArrays(gl.TRIANGLES, 0, 6);
 
-      requestAnimationFrame(render);
+      rafId = requestAnimationFrame(render);
+    } catch (err) {
+      console.warn('WebGL logo render failed, using fallback logo.', err);
+      stopLoop();
+      showFallback();
     }
-    requestAnimationFrame(render);
+  }
+
+  function createShader(ctx, type, src) {
+    const s = ctx.createShader(type);
+    if (!s) return null;
+    ctx.shaderSource(s, src);
+    ctx.compileShader(s);
+    if (!ctx.getShaderParameter(s, ctx.COMPILE_STATUS)) {
+      console.error('Shader compile error:', ctx.getShaderInfoLog(s));
+      ctx.deleteShader(s);
+      return null;
+    }
+    return s;
+  }
+
+  function uploadMaskTexture() {
+    const texture = gl.createTexture();
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, texture);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
+    showCanvas();
+  }
+
+  function setupWebGL() {
+    try {
+      syncCanvasSize();
+      gl = canvas.getContext('webgl', {
+        alpha: true,
+        premultipliedAlpha: true,
+        antialias: false,
+        depth: false,
+        stencil: false
+      });
+      if (!gl || gl.isContextLost()) {
+        showFallback();
+        return false;
+      }
+
+      const vs = createShader(gl, gl.VERTEX_SHADER, vsSource);
+      const fs = createShader(gl, gl.FRAGMENT_SHADER, fsSource);
+      if (!vs || !fs) {
+        showFallback();
+        return false;
+      }
+
+      program = gl.createProgram();
+      if (!program) {
+        showFallback();
+        return false;
+      }
+      gl.attachShader(program, vs);
+      gl.attachShader(program, fs);
+      gl.linkProgram(program);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.error('Program link error:', gl.getProgramInfoLog(program));
+        showFallback();
+        return false;
+      }
+      gl.useProgram(program);
+
+      // Fullscreen quad buffer
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+        -1, -1,
+         1, -1,
+        -1,  1,
+        -1,  1,
+         1, -1,
+         1,  1
+      ]), gl.STATIC_DRAW);
+
+      const aPos = gl.getAttribLocation(program, 'aPos');
+      gl.enableVertexAttribArray(aPos);
+      gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+      uTex = gl.getUniformLocation(program, 'uTex');
+      uTime = gl.getUniformLocation(program, 'uTime');
+
+      if (maskReady) {
+        uploadMaskTexture();
+      }
+
+      return true;
+    } catch (err) {
+      console.warn('WebGL setup failed, using fallback static logo.', err);
+      showFallback();
+      return false;
+    }
+  }
+
+  canvas.addEventListener('webglcontextlost', (e) => {
+    e.preventDefault();
+    isContextLost = true;
+    stopLoop();
+    showFallback();
+  });
+
+  canvas.addEventListener('webglcontextrestored', () => {
+    isContextLost = false;
+    if (setupWebGL()) {
+      startLoop();
+    }
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopLoop();
+    } else {
+      startLoop();
+    }
+  });
+
+  window.addEventListener('pagehide', stopLoop);
+  window.addEventListener('pageshow', startLoop);
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        isInViewport = entry.isIntersecting;
+        if (isInViewport) {
+          startLoop();
+        } else {
+          stopLoop();
+        }
+      }
+    }, { threshold: 0.01 });
+    observer.observe(container || canvas);
+  }
+
+  if (!setupWebGL()) {
+    console.warn('WebGL not supported, using fallback static logo.');
+    return;
+  }
+
+  let triedExternalMask = false;
+  img.onload = () => {
+    maskReady = true;
+    if (!gl || isContextLost || gl.isContextLost()) {
+      showFallback();
+      return;
+    }
+    try {
+      uploadMaskTexture();
+      startLoop();
+    } catch (err) {
+      console.warn('WebGL texture upload failed, using fallback static logo.', err);
+      showFallback();
+    }
   };
 
   img.onerror = () => {
-    console.warn('Failed to load mask image, loading external asset...');
-    img.src = 'assets/game-logo-mask.png?v=0.4.4-media1';
+    if (!triedExternalMask) {
+      triedExternalMask = true;
+      console.warn('Failed to load embedded mask image, loading external asset...');
+      img.src = 'assets/game-logo-mask.png?v=0.4.4-media2';
+      return;
+    }
+    console.warn('Failed to load mask image asset, using fallback static logo.');
+    showFallback();
   };
 
   // Use embedded data URI for zero-latency, zero-CORS instant load
@@ -914,12 +1057,12 @@ function initHeroLogoShader() {
 // 5. COMBAT MEDIA SHOWCASE (TRAILER & LIGHTBOX)
 // ==========================================
 const mediaGalleryItems = [
-  { src: 'assets/screenshots/01_boss_asteroid_cover.webp?v=0.4.4-media1', key: 'media_cap_1' },
-  { src: 'assets/screenshots/02_shattered_asteroids_dash.webp?v=0.4.4-media1', key: 'media_cap_2' },
-  { src: 'assets/screenshots/03_boss_spiral_duel.webp?v=0.4.4-media1', key: 'media_cap_3' },
-  { src: 'assets/screenshots/04_explosive_swarm_combat.webp?v=0.4.4-media1', key: 'media_cap_4' },
-  { src: 'assets/screenshots/05_multi_enemy_dogfight.webp?v=0.4.4-media1', key: 'media_cap_5' },
-  { src: 'assets/screenshots/06_upgrade_shop_fusion.webp?v=0.4.4-media1', key: 'media_cap_6' }
+  { src: 'assets/screenshots/01_boss_asteroid_cover.webp?v=0.4.4-media2', key: 'media_cap_1' },
+  { src: 'assets/screenshots/02_shattered_asteroids_dash.webp?v=0.4.4-media2', key: 'media_cap_2' },
+  { src: 'assets/screenshots/03_boss_spiral_duel.webp?v=0.4.4-media2', key: 'media_cap_3' },
+  { src: 'assets/screenshots/04_explosive_swarm_combat.webp?v=0.4.4-media2', key: 'media_cap_4' },
+  { src: 'assets/screenshots/05_multi_enemy_dogfight.webp?v=0.4.4-media2', key: 'media_cap_5' },
+  { src: 'assets/screenshots/06_upgrade_shop_fusion.webp?v=0.4.4-media2', key: 'media_cap_6' }
 ];
 
 function initMediaShowcase() {
@@ -930,7 +1073,7 @@ function initMediaShowcase() {
       trailerCard.classList.add('is-playing');
       trailerCard.removeAttribute('role');
       trailerCard.removeAttribute('tabindex');
-      trailerCard.innerHTML = '<iframe class="trailer-iframe" src="https://www.youtube-nocookie.com/embed/vIUJi6Di180?autoplay=1&rel=0" title="Astrofray Preview Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      trailerCard.innerHTML = '<iframe class="trailer-iframe" src="https://www.youtube-nocookie.com/embed/sYiSr9Lcu90?autoplay=1&rel=0" title="Astrofray Preview Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     };
     trailerCard.addEventListener('click', loadTrailer);
     trailerCard.addEventListener('keydown', (e) => {

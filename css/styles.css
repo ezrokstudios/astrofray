@@ -370,12 +370,7 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 0 24px rgba(0, 240, 255, 0.35));
-  transition: filter 0.3s ease;
-}
-
-.hero-logo-wrapper:hover .astrofray-logo-canvas {
-  filter: drop-shadow(0 0 36px rgba(0, 240, 255, 0.65)) drop-shadow(0 0 55px rgba(255, 0, 170, 0.5));
+  transition: opacity 0.25s ease;
 }
 
 .astrofray-logo-fallback {
@@ -1395,14 +1390,6 @@ html[data-js-lang="de"] [data-lang-block="en"] {
 
 .screenshot-card:hover .screenshot-zoom-badge {
   opacity: 1;
-}
-
-.screenshot-caption {
-  padding: 10px 14px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-main);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* LIGHTBOX MODAL */
